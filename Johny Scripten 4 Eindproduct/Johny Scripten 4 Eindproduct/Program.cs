@@ -7,11 +7,12 @@ namespace Johny_Scripten_4_Eindproduct
 
         static void Main(string[] args)
         {
+            Console.ResetColor();
             //variables for tracking the score and goal score
             int score = 0;
-            int goalScore = 5;
+            int goalScore = 15;
 
-            //variable to set how objects in the game look, you can change the tile and sprites here, the other sprites are set in-game
+            //variable to set how objects in the game look, you can change the tile and wall sprites here, the other sprites are set in-game
             string prizeSprite = "";
             string playerSprite = "";
             string tileSprite = "  ";
@@ -120,12 +121,13 @@ namespace Johny_Scripten_4_Eindproduct
             while (wantToPlay)
             {
                 //variable set here so they get reset after each game
-
-                //variable for playfield
-                string[][] playField = new string[16][];
+                int phase = 1;
 
                 //variable for width of playfield
-                int playFieldWidth = 32;
+                int playFieldHeight = 10;
+
+                //variable for width of playfield
+                int playFieldWidth = 10;
 
                 //variable for tracking player location
                 int playerX = 0;
@@ -174,6 +176,7 @@ namespace Johny_Scripten_4_Eindproduct
                     Console.Clear();
 
                     //generate playing field, including border
+                    string[][] playField = new string[playFieldHeight][];
                     int y = 0;
                     while (y < playField.Length)
                     {
@@ -187,17 +190,40 @@ namespace Johny_Scripten_4_Eindproduct
                                 x++;
                             }
                         }
+                        if (y == 9 && phase == 3)
+                        {
+                            while (x < playField[y].Length)
+                            {
+                                if ((x != 13 && x != 14) && y != 0 && y != playField.Length - 1)
+                                {
+                                    playField[y][x] = wallSprite;
+                                }
+                                else
+                                {
+                                    playField[y][x] = tileSprite;
+                                }
+                                x++;
+                            }
+                        }
 
                         while (x < playField[y].Length && y != 0 && y != playField.Length - 1)
                         {
-                            if (x == 0 || x == playField[y].Length - 1)
+                            //prevents player from being overwritten
+                            if (playField[y][x] == playerSprite)
+                            {
+                                playField[y][x] = playerSprite;
+                            }
+                            else if((x == 0 || x == playField[y].Length - 1) && phase == 1)
                             {
                                 playField[y][x] = wallSprite;
                             }
-                            //prevents player from being overwritten
-                            else if (playField[y][x] == playerSprite)
+                            else if ((x == 0 || x == playField[y].Length - 1 || (x == 9 && y != 5 && y != 4)) && phase == 2)
                             {
-                                playField[y][x] = playerSprite;
+                                playField[y][x] = wallSprite;
+                            }
+                            else if ((x == 0 || x == playField[y].Length - 1 || (x == 9 && y != 5 && y != 4 && y != 13 && y != 14)) && phase == 3)
+                            {
+                                playField[y][x] = wallSprite;
                             }
                             else
                             {
@@ -264,6 +290,18 @@ namespace Johny_Scripten_4_Eindproduct
                         playField[oldPlayerY][oldPlayerX] = playerSprite;
                         score += 1;
                         PrizeSpawned = false;
+
+                        if (score > 9)
+                        {
+                            playFieldHeight = 19;
+                            phase = 3;
+                        }
+                        else if (score > 4)
+                        {
+                            playFieldWidth = 19;
+                            phase = 2;
+                        }
+
                     }
 
                     //write score on the screen
@@ -284,16 +322,15 @@ namespace Johny_Scripten_4_Eindproduct
                         prizeX = rnd.Next(1, playField[0].Length - 1);
                         prizeY = rnd.Next(1, playField.Length - 1);
 
-                        //make sure the prize isn't spawning on top of the player or a wall
-                        while ((playField[prizeY][prizeX] == playerSprite) || (playField[prizeY][prizeX] == wallSprite))
-                        {
-                            prizeX = rnd.Next(1, playField[0].Length - 1);
-                            prizeY = rnd.Next(1, playField.Length - 1);
-                        }
-
                         PrizeSpawned = true;
                     }
 
+                    //make sure the prize isn't spawning on top of the player or a wall
+                    while ((playField[prizeY][prizeX] == playerSprite) || (playField[prizeY][prizeX] == wallSprite))
+                    {
+                        prizeX = rnd.Next(1, playField[0].Length - 1);
+                        prizeY = rnd.Next(1, playField.Length - 1);
+                    }
                     //spawn the prize in either the newly generated location, or in the old location if it hasn't been picked up yet.
                     playField[prizeY][prizeX] = prizeSprite;
 
@@ -310,8 +347,24 @@ namespace Johny_Scripten_4_Eindproduct
                             }
                             else if (verticalLine == wallSprite)
                             {
-                                Console.ForegroundColor = ConsoleColor.DarkGray;
+                                switch (phase)
+                                {
+                                    case 1:
+                                        Console.BackgroundColor = ConsoleColor.DarkGray;
+                                        Console.ForegroundColor = ConsoleColor.DarkGray;
+                                        break;
+                                    case 2:
+                                        Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                        Console.ForegroundColor = ConsoleColor.DarkYellow;
+                                        break;
+                                    case 3:
+                                        Console.BackgroundColor = ConsoleColor.DarkCyan;
+                                        Console.ForegroundColor = ConsoleColor.DarkCyan;
+                                        break;
+                                }
                                 Console.Write(verticalLine);
+                                Console.BackgroundColor = ConsoleColor.Black;
+
                             }
                             else if (verticalLine == prizeSprite)
                             {
@@ -371,33 +424,6 @@ namespace Johny_Scripten_4_Eindproduct
                             break;
                     }
                 }
-            }
-        }
-
-        static void ChangeColour(int newColour)
-        {
-            switch (newColour)
-            {
-                case 0:
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    break;
-                case 1:
-                    Console.ForegroundColor = ConsoleColor.Yellow;
-                    break;
-                case 2:
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    break;
-                case 3:
-                    Console.ForegroundColor = ConsoleColor.Cyan;
-                    break;
-                case 4:
-                    Console.ForegroundColor = ConsoleColor.Blue;
-                    break;
-                case 5:
-                    Console.ForegroundColor = ConsoleColor.Magenta;
-                    break;
-                default:
-                    break;
             }
         }
     }
