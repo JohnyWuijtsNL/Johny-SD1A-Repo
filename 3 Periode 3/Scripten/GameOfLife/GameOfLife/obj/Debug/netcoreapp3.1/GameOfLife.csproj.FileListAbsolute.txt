@@ -1,0 +1,13 @@
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\GameOfLife\GameOfLife\bin\Debug\netcoreapp3.1\GameOfLife.exe
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\GameOfLife\GameOfLife\bin\Debug\netcoreapp3.1\GameOfLife.deps.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\GameOfLife\GameOfLife\bin\Debug\netcoreapp3.1\GameOfLife.runtimeconfig.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\GameOfLife\GameOfLife\bin\Debug\netcoreapp3.1\GameOfLife.runtimeconfig.dev.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\GameOfLife\GameOfLife\bin\Debug\netcoreapp3.1\GameOfLife.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\GameOfLife\GameOfLife\bin\Debug\netcoreapp3.1\GameOfLife.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\GameOfLife\GameOfLife\obj\Debug\netcoreapp3.1\GameOfLife.csprojAssemblyReference.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\GameOfLife\GameOfLife\obj\Debug\netcoreapp3.1\GameOfLife.AssemblyInfoInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\GameOfLife\GameOfLife\obj\Debug\netcoreapp3.1\GameOfLife.AssemblyInfo.cs
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\GameOfLife\GameOfLife\obj\Debug\netcoreapp3.1\GameOfLife.csproj.CoreCompileInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\GameOfLife\GameOfLife\obj\Debug\netcoreapp3.1\GameOfLife.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\GameOfLife\GameOfLife\obj\Debug\netcoreapp3.1\GameOfLife.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\GameOfLife\GameOfLife\obj\Debug\netcoreapp3.1\GameOfLife.genruntimeconfig.cache

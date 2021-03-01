@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Johny Scripten 4 Eindproduct/1.0.0": {
+        "runtime": {
+          "Johny Scripten 4 Eindproduct.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Johny Scripten 4 Eindproduct/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
