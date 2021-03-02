@@ -82,11 +82,12 @@ li:hover {
 div.text-block {
     position: relative;
     background-color: #9298;
-    top: 250px;
+    top: 200px;
+    left: 50%;
     padding: 25px;
     border-radius: 25px;
     display: inline-block;
-    margin-left: 25%;
+    margin-left: -340px;
 }
 
 
@@ -140,11 +141,44 @@ div.text-block img {
 }
 
 .yt {
-    width: 256px;
-    height: 256px;
+    display: inline-block;
     background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/youtube-logo.png?raw=true);
+    background-size: 100% auto;
 }
 
-div.social-media {
-    margin-top: 200px;
+    .yt:hover {
+        background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/youtube-logo-hover.png?raw=true);
+    }
+
+.insta {
+    display: inline-block;
+    background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/instagram-logo.png?raw=true);
+    background-size: 100% auto;
 }
+
+    .insta:hover {
+        background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/instagram-logo-hover.png?raw=true);
+    }
+
+.mail{
+    display: inline-block;
+    background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/email-logo.png?raw=true);
+    background-size: 100% auto;
+}
+
+    .mail:hover {
+        background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/email-logo-hover.png?raw=true);
+    }
+
+
+div.social-media {
+    margin-top: 300px;
+    display: inline-block;
+    margin-left: -475px;
+    left: 50%;
+    position: absolute;
+}
+
+    div.social-media > * {
+        margin: 0 30px;
+    }
