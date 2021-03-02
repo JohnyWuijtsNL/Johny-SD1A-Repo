@@ -21,6 +21,15 @@ body.services {
     background-position-x: 25%;
 }
 
+body.contact {
+    background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/paper-bg.jpg?raw=true);
+    background-color: #CCC;
+    background-size: 1920px auto;
+    background-position-y: 0%;
+    background-position-x: 25%;
+}
+
+
 header {
     background-color: #A2A;
     background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/poison-landscape.png?raw=true);
@@ -128,4 +137,14 @@ div.text-block img {
     border-radius: 50px;
     margin-top: -.5em;
     margin-left: 1em;
+}
+
+.yt {
+    width: 256px;
+    height: 256px;
+    background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/youtube-logo.png?raw=true);
+}
+
+div.social-media {
+    margin-top: 200px;
 }
