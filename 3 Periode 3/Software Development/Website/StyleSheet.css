@@ -6,21 +6,24 @@
 }
 
 body.about {
-    background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/Emma.png?raw=true);
+    background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/emma-bg.png?raw=true);
+    background-color: #48A;
     background-size: 1920px auto;
     background-position-y: 0%;
     background-position-x: 25%;
 }
 
 body.services {
-    background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/wood%20background.jpg?raw=true);
+    background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/wood-bg.jpg?raw=true);
+    background-color: #C74;
     background-size: 1920px auto;
     background-position-y: 0%;
     background-position-x: 25%;
 }
 
 header {
-    background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/Poison%20Landscape.png?raw=true);
+    background-color: #A2A;
+    background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/poison-landscape.png?raw=true);
     background-size: 100% auto;
     background-position-y: 65%;
     position: fixed;
@@ -44,13 +47,13 @@ li {
 }
 
 ul {
-    background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/Poison%20Landscape.png?raw=true);
+    background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/poison-landscape.png?raw=true);
     background-size: 200% auto;
     background-position-y: 23%;
     background-position-x: 25%;
     position: fixed;
     top: 75px;
-    background-color: #E8E;
+    background-color: #FCF;
     display: flex;
     z-index: 10;
 }
@@ -79,7 +82,8 @@ div.text-block {
 
 
 a.google-button {
-    background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/splinter%20button.jpg?raw=true);
+    background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/splinter-button.jpg?raw=true);
+    background-color: #DCB;
     background-size: 200% auto;
     top: 50%;
     padding: 50px;
@@ -92,7 +96,8 @@ a.google-button {
 }
 
     a.google-button:hover {
-        background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/splinter%20button%20hover.jpg?raw=true);
+        background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/splinter-button-hover.jpg?raw=true);
+        background-color: #EDC;
     }
 
     h1 {
@@ -113,12 +118,14 @@ a.google-button {
       padding: .2em;
     }
 
-    table {
-        margin-top: -1em;
-        margin-left: 1em;
-    }
-
-div .img {
+table {
     margin-top: -1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+div.text-block img {
+    border-radius: 50px;
+    margin-top: -.5em;
     margin-left: 1em;
 }
