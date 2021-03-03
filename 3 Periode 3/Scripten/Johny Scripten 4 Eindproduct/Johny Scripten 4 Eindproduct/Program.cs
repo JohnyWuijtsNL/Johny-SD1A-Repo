@@ -10,7 +10,7 @@ namespace Johny_Scripten_4_Eindproduct
             Console.ResetColor();
             //variables for tracking the score and goal score
             int score = 0;
-            int goalScore = 20;
+            int goalScore = 15;
 
             //variable to set how objects in the game look, you can change the tile and wall sprites here, the other sprites are set in-game
             string prizeSprite = "";
