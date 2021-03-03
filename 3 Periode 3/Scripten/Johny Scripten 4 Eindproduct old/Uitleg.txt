@@ -1,3 +1,0 @@
-Voor mijn eindopdracht van Scripten 4 ben ik van plan om een soort arcade game te maken, waar je rond moet lopen om punten te verzamelen. Je krijgt eerst een dialoog die uitlegd hoe je het spel moet spelen, deze vraagt ook om je eigen karakter en prijs te maken. Als je dit gedaan hebt begint het spel.
-
-Het is al af zover ik ben, maar na feedback voeg ik misschien nog meer toe, zoals een faal conditie of een vijandelijke computer speler die ook punten verzamelt.

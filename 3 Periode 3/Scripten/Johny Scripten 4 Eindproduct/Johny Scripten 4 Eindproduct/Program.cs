@@ -108,7 +108,7 @@ namespace Johny_Scripten_4_Eindproduct
             {
                 Console.WriteLine("Okay, with that out of the way, let's start the game!");
                 Console.WriteLine("The goal is to collect the prizes you set, so in your case, " + prizeSprite + ".");
-                Console.WriteLine("You can move by pressing enter, and change direction by pressing wasd keys, so w is up, a is left, etc.");
+                Console.WriteLine("You can move by pressing wasd keys, so w is up, a is left, etc.");
                 Console.WriteLine("The prizes will randomly appear on the board, try to get " + goalScore + " points as fast as possible!");
                 Console.WriteLine("Good luck! Press enter to continue.");
             }
@@ -116,7 +116,7 @@ namespace Johny_Scripten_4_Eindproduct
             {
                 Console.WriteLine("....Okay, with that out of the way, let's start the game.");
                 Console.WriteLine("The goal is to collect the prizes you were supposed to set, so in your case, " + prizeSprite + ".");
-                Console.WriteLine("You can move by pressing enter, and change direction by pressing wasd keys, so w is up, a is left, etc.");
+                Console.WriteLine("You can move by pressing wasd keys, so w is up, a is left, etc.");
                 Console.WriteLine("The prizes will randomly appear on the board. Try to get " + goalScore + " points as fast as possible, press enter to continue.");
             }
 

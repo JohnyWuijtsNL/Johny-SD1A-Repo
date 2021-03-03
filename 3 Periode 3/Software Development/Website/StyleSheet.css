@@ -29,7 +29,7 @@ body.about {
     background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/emma-bg.png?raw=true);
     background-position-x: 25%;
     background-position-y: 0;
-    background-size: 1920px auto;
+    background-size: cover;
 }
 
 body.contact {
@@ -37,7 +37,7 @@ body.contact {
     background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/paper-bg.jpg?raw=true);
     background-position-x: 25%;
     background-position-y: 0;
-    background-size: 1920px auto;
+    background-size: cover;
 }
 
 div.social-media > * {
@@ -169,13 +169,13 @@ body.services {
     background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/wood-bg.jpg?raw=true);
     background-position-x: 25%;
     background-position-y: 0;
-    background-size: 1920px auto;
+    background-size: cover;
 }
 
 body.login {
     background-color: #112;
     background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/steel-bg.png?raw=true);
-    background-size: 3000px auto;
+    background-size: cover;
     background-position-x: 50%;
     background-position-y: 0;
 }
