@@ -30,6 +30,9 @@ namespace Johny_Scripten_4_Eindproduct
             float endTime;
             bool wantToPlay = true;
 
+            //input
+            string pressedKey = "";
+
             //random seed set
             Random rnd = new Random(5873495);
 
@@ -40,11 +43,11 @@ namespace Johny_Scripten_4_Eindproduct
                 {
                     case 0:
                         Console.WriteLine("Hey, Welcome to the game!");
-                        Console.WriteLine("Please customize your character.");
+                        Console.WriteLine("Please customize your character. You need to enter 2 characters, your character will be those 2 characters.");
                         playerSprite = Console.ReadLine();
                         break;
                     case 1:
-                        Console.WriteLine("Sorry, I should've clarified. You need to enter 2 characters, your character will be those 2 characters.");
+                        Console.WriteLine("Come on, you can do it! Just enter 2 characters!");
                         playerSprite = Console.ReadLine();
                         break;
                     case 2:
@@ -65,7 +68,7 @@ namespace Johny_Scripten_4_Eindproduct
                 switch (attempt2)
                 {
                     case 0:
-                        if(attempt1 <= 2)
+                        if (attempt1 <= 2)
                         {
                             Console.WriteLine("Good, good. Now, please customize the prize you want to go after.");
                             prizeSprite = Console.ReadLine();
@@ -101,7 +104,7 @@ namespace Johny_Scripten_4_Eindproduct
             }
 
             //player instructions
-            if(attempt1 <= 3 && attempt2 <= 2)
+            if (attempt1 <= 3 && attempt2 <= 2)
             {
                 Console.WriteLine("Okay, with that out of the way, let's start the game!");
                 Console.WriteLine("The goal is to collect the prizes you set, so in your case, " + prizeSprite + ".");
@@ -143,27 +146,14 @@ namespace Johny_Scripten_4_Eindproduct
                 int prizeX = 0;
                 int prizeY = 0;
 
-                //input
-                string pressedKey = "d";
-                string oldInput = "d";
-                bool inputWorked = true;
-
-
-
                 //single game
                 while (score < goalScore)
                 {
-                    //stores the pressed key in a variable, and at the start of the game, also gives the player time to read instructions
-                    if (inputWorked)
-                    {
-                        oldInput = pressedKey;
-                    }
-                    //resets the inputWorked bool, used later to determine if the player should change direction
-                    inputWorked = true;
 
                     //makes what the player types invisible
                     Console.ForegroundColor = Console.BackgroundColor;
-                    pressedKey = Console.ReadLine();
+                    ConsoleKeyInfo pKey = Console.ReadKey();
+                    pressedKey = pKey.Key.ToString().ToLower();
 
                     //starts the timer if ran for the first time
                     if (!gameStarted)
@@ -213,7 +203,7 @@ namespace Johny_Scripten_4_Eindproduct
                             {
                                 playField[y][x] = playerSprite;
                             }
-                            else if((x == 0 || x == playField[y].Length - 1) && phase == 1)
+                            else if ((x == 0 || x == playField[y].Length - 1) && phase == 1)
                             {
                                 playField[y][x] = wallSprite;
                             }
@@ -254,25 +244,6 @@ namespace Johny_Scripten_4_Eindproduct
                             playerX += 1;
                             break;
                         default:
-                            //if the player entered anything other than wasd, ignore currrent input and look at the old input
-                            inputWorked = false;
-                            switch (oldInput)
-                            {
-                                case "w":
-                                    playerY -= 1;
-                                    break;
-                                case "a":
-                                    playerX -= 1;
-                                    break;
-                                case "s":
-                                    playerY += 1;
-                                    break;
-                                case "d":
-                                    playerX += 1;
-                                    break;
-                                default:
-                                    break;
-                            }
                             break;
 
                     }

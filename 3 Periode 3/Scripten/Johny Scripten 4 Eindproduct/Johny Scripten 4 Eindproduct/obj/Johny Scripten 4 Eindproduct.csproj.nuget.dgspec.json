@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Johny\\Documents\\GitHub\\Johny-SD1A-Repo\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct.csproj": {}
+    "C:\\Users\\Johny\\Documents\\GitHub\\Johny-SD1A-Repo\\3 Periode 3\\Scripten\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Johny\\Documents\\GitHub\\Johny-SD1A-Repo\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct.csproj": {
+    "C:\\Users\\Johny\\Documents\\GitHub\\Johny-SD1A-Repo\\3 Periode 3\\Scripten\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Johny\\Documents\\GitHub\\Johny-SD1A-Repo\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct.csproj",
+        "projectUniqueName": "C:\\Users\\Johny\\Documents\\GitHub\\Johny-SD1A-Repo\\3 Periode 3\\Scripten\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct.csproj",
         "projectName": "Johny Scripten 4 Eindproduct",
-        "projectPath": "C:\\Users\\Johny\\Documents\\GitHub\\Johny-SD1A-Repo\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct.csproj",
+        "projectPath": "C:\\Users\\Johny\\Documents\\GitHub\\Johny-SD1A-Repo\\3 Periode 3\\Scripten\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct.csproj",
         "packagesPath": "C:\\Users\\Johny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Johny\\Documents\\GitHub\\Johny-SD1A-Repo\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct\\obj\\",
+        "outputPath": "C:\\Users\\Johny\\Documents\\GitHub\\Johny-SD1A-Repo\\3 Periode 3\\Scripten\\Johny Scripten 4 Eindproduct\\Johny Scripten 4 Eindproduct\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Johny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
