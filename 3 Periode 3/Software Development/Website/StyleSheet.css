@@ -20,8 +20,8 @@ a.google-button {
 }
 
     a.google-button:hover {
-        background-color: #EDC;
-        background-image: url(https://github.com/JohnyWuijtsSL/Johny-SD1A-Repo/blob/main/3%20Periode%203/Software%20Development/Website/images/splinter-button-hover.jpg?raw=true);
+        background-color: #FFF2;
+        background-blend-mode: lighten;
     }
 
 body.about {
@@ -68,6 +68,11 @@ div.text-block {
     position: relative;
     top: 200px;
 }
+
+    div.text-block.cs {
+        margin-left: -132px;
+    }
+
 
 h1 {
     text-align: center;
