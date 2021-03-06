@@ -10,7 +10,7 @@ namespace Johny_Scripten_4_Eindproduct
             Console.ResetColor();
             //variables for tracking the score and goal score
             int score = 0;
-            int goalScore = 15;
+            int goalScore = 30;
 
             //variable to set how objects in the game look, you can change the tile and wall sprites here, the other sprites are set in-game
             string prizeSprite = "";
@@ -125,6 +125,7 @@ namespace Johny_Scripten_4_Eindproduct
             {
                 //variable set here so they get reset after each game
                 int phase = 1;
+                int fieldRandom = 0;
 
                 //variable for width of playfield
                 int playFieldHeight = 10;
@@ -149,6 +150,8 @@ namespace Johny_Scripten_4_Eindproduct
                 //single game
                 while (score < goalScore)
                 {
+                    //set random seed
+                    rnd = new Random(System.Environment.TickCount);
 
                     //makes what the player types invisible
                     Console.ForegroundColor = Console.BackgroundColor;
@@ -180,11 +183,59 @@ namespace Johny_Scripten_4_Eindproduct
                                 x++;
                             }
                         }
-                        if (y == 9 && phase == 3)
+                        if (y == 9)
+                        {
+                            if (phase == 4 || phase == 5)
+                            {
+                                while (x < playField[y].Length)
+                                {
+                                    if ((x != 4 && x != 5 && x != 13 && x != 14) && y != 0 && y != playField.Length - 1)
+                                    {
+                                        playField[y][x] = wallSprite;
+                                    }
+                                    else
+                                    {
+                                        playField[y][x] = tileSprite;
+                                    }
+                                    x++;
+                                }
+                            }
+                            else if (phase == 3)
+                            {
+                                while (x < playField[y].Length)
+                                {
+                                    if ((x != 13 && x != 14) && y != 0 && y != playField.Length - 1)
+                                    {
+                                        playField[y][x] = wallSprite;
+                                    }
+                                    else
+                                    {
+                                        playField[y][x] = tileSprite;
+                                    }
+                                    x++;
+                                }
+                            }
+                        }
+                        else if ((y == 3 || y == 6) && (phase == 4 || phase == 5))
                         {
                             while (x < playField[y].Length)
                             {
-                                if ((x != 13 && x != 14) && y != 0 && y != playField.Length - 1)
+                                if ((x >= 3 && x <= 9) || x == 0 || x == playField[y].Length - 1 || x == 12 || x == 15)
+                                {
+                                    playField[y][x] = wallSprite;
+                                }
+                                else
+                                {
+                                    playField[y][x] = tileSprite;
+                                }
+                                x++;
+                            }
+                        }
+                        else if ((y == 12 || y == 15) && (phase == 4 || phase == 5))
+                        {
+                            while (x < playField[y].Length)
+                            {
+                                if ((x >= 9 && x <= 15) || x == 0 || x == playField[y].Length - 1 || x == 3 || x == 6)
                                 {
                                     playField[y][x] = wallSprite;
                                 }
@@ -203,15 +254,16 @@ namespace Johny_Scripten_4_Eindproduct
                             {
                                 playField[y][x] = playerSprite;
                             }
-                            else if ((x == 0 || x == playField[y].Length - 1) && phase == 1)
+
+                            if ((x == 9 && y != 5 && y != 4) && phase == 2)
                             {
                                 playField[y][x] = wallSprite;
                             }
-                            else if ((x == 0 || x == playField[y].Length - 1 || (x == 9 && y != 5 && y != 4)) && phase == 2)
+                            else if ((x == 9 && y != 5 && y != 4 && y != 13 && y != 14) && phase == 3)
                             {
                                 playField[y][x] = wallSprite;
                             }
-                            else if ((x == 0 || x == playField[y].Length - 1 || (x == 9 && y != 5 && y != 4 && y != 13 && y != 14)) && phase == 3)
+                            else if (((x == 9 && y != 5 && y != 4 && y != 13 && y != 14) || ((x == 3 || x == 6) && (y >= 9 && y <= 15)) || ((x == 12 || x == 15) && (y >= 3 && y <= 9))) && (phase == 4 || phase == 5))
                             {
                                 playField[y][x] = wallSprite;
                             }
@@ -219,10 +271,62 @@ namespace Johny_Scripten_4_Eindproduct
                             {
                                 playField[y][x] = tileSprite;
                             }
+
+                            if (x == 0 || x == playField[y].Length - 1)
+                            {
+                                playField[y][x] = wallSprite;
+                            }
                             x++;
                         }
                         y++;
                     }
+                    if (phase == 5)
+                    {
+                        y = 0;
+                        while (y < playField.Length)
+                        {
+                            int x = 0;
+                            if (y % 2 == 0)
+                            {
+                                while (x < playField[y].Length)
+                                {
+                                    if ((x + 2 + fieldRandom) % 4 == 0)
+                                    {
+                                        if (score % 2 == 0)
+                                        {
+                                            playField[y][x] = wallSprite;
+                                        }
+                                        else
+                                        {
+                                            playField[x][y] = wallSprite;
+                                        }
+                                    }
+                                    x++;
+                                }
+                            }
+                            else if (y % 2 == 1)
+                            {
+                                while (x < playField[y].Length)
+                                {
+                                    if ((x + fieldRandom) % 4 == 0)
+                                    {
+                                        if (score % 2 == 0)
+                                        {
+                                            playField[y][x] = wallSprite;
+                                        }
+                                        else
+                                        {
+                                            playField[x][y] = wallSprite;
+                                        }
+                                    }
+                                    x++;
+                                }
+                            }
+                            y++;
+                        }
+                    }
+
+
 
                     //store old location of player, in case the player touches a wall
                     oldPlayerX = playerX;
@@ -262,7 +366,19 @@ namespace Johny_Scripten_4_Eindproduct
                         score += 1;
                         PrizeSpawned = false;
 
-                        if (score > 9)
+                        //set random position for phase 5
+                        fieldRandom = rnd.Next(0, 4);
+
+                        //change phase if score is above a certain point
+                        if (score > 19)
+                        {
+                            phase = 5;
+                        }
+                        else if (score > 14)
+                        {
+                            phase = 4;
+                        }
+                        else if (score > 9)
                         {
                             playFieldHeight = 19;
                             phase = 3;
@@ -331,6 +447,14 @@ namespace Johny_Scripten_4_Eindproduct
                                     case 3:
                                         Console.BackgroundColor = ConsoleColor.DarkCyan;
                                         Console.ForegroundColor = ConsoleColor.DarkCyan;
+                                        break;
+                                    case 4:
+                                        Console.BackgroundColor = ConsoleColor.DarkBlue;
+                                        Console.ForegroundColor = ConsoleColor.DarkBlue;
+                                        break;
+                                    case 5:
+                                        Console.BackgroundColor = ConsoleColor.DarkRed;
+                                        Console.ForegroundColor = ConsoleColor.DarkRed;
                                         break;
                                 }
                                 Console.Write(verticalLine);
