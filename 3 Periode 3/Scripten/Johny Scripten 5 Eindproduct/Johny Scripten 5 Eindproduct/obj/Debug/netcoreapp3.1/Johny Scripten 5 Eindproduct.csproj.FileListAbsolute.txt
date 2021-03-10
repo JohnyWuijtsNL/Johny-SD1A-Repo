@@ -1,0 +1,13 @@
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Johny Scripten 5 Eindproduct\Johny Scripten 5 Eindproduct\bin\Debug\netcoreapp3.1\Johny Scripten 5 Eindproduct.exe
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Johny Scripten 5 Eindproduct\Johny Scripten 5 Eindproduct\bin\Debug\netcoreapp3.1\Johny Scripten 5 Eindproduct.deps.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Johny Scripten 5 Eindproduct\Johny Scripten 5 Eindproduct\bin\Debug\netcoreapp3.1\Johny Scripten 5 Eindproduct.runtimeconfig.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Johny Scripten 5 Eindproduct\Johny Scripten 5 Eindproduct\bin\Debug\netcoreapp3.1\Johny Scripten 5 Eindproduct.runtimeconfig.dev.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Johny Scripten 5 Eindproduct\Johny Scripten 5 Eindproduct\bin\Debug\netcoreapp3.1\Johny Scripten 5 Eindproduct.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Johny Scripten 5 Eindproduct\Johny Scripten 5 Eindproduct\bin\Debug\netcoreapp3.1\Johny Scripten 5 Eindproduct.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Johny Scripten 5 Eindproduct\Johny Scripten 5 Eindproduct\obj\Debug\netcoreapp3.1\Johny Scripten 5 Eindproduct.csprojAssemblyReference.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Johny Scripten 5 Eindproduct\Johny Scripten 5 Eindproduct\obj\Debug\netcoreapp3.1\Johny Scripten 5 Eindproduct.AssemblyInfoInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Johny Scripten 5 Eindproduct\Johny Scripten 5 Eindproduct\obj\Debug\netcoreapp3.1\Johny Scripten 5 Eindproduct.AssemblyInfo.cs
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Johny Scripten 5 Eindproduct\Johny Scripten 5 Eindproduct\obj\Debug\netcoreapp3.1\Johny Scripten 5 Eindproduct.csproj.CoreCompileInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Johny Scripten 5 Eindproduct\Johny Scripten 5 Eindproduct\obj\Debug\netcoreapp3.1\Johny Scripten 5 Eindproduct.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Johny Scripten 5 Eindproduct\Johny Scripten 5 Eindproduct\obj\Debug\netcoreapp3.1\Johny Scripten 5 Eindproduct.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Johny Scripten 5 Eindproduct\Johny Scripten 5 Eindproduct\obj\Debug\netcoreapp3.1\Johny Scripten 5 Eindproduct.genruntimeconfig.cache

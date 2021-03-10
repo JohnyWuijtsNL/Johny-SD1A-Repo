@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Johny Scripten 5 Eindproduct", "Johny Scripten 5 Eindproduct\Johny Scripten 5 Eindproduct.csproj", "{A35AE5EF-C449-4C4C-9DDE-0CB96AFADD03}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Johny Scripten 5 Eindproduct", "Johny Scripten 5 Eindproduct\Johny Scripten 5 Eindproduct.csproj", "{377B4627-BBDB-4829-B405-F74A7518A2C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A35AE5EF-C449-4C4C-9DDE-0CB96AFADD03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A35AE5EF-C449-4C4C-9DDE-0CB96AFADD03}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A35AE5EF-C449-4C4C-9DDE-0CB96AFADD03}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A35AE5EF-C449-4C4C-9DDE-0CB96AFADD03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{377B4627-BBDB-4829-B405-F74A7518A2C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377B4627-BBDB-4829-B405-F74A7518A2C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377B4627-BBDB-4829-B405-F74A7518A2C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377B4627-BBDB-4829-B405-F74A7518A2C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {57C6F28B-8A37-4EED-8019-5B461BF02275}
+		SolutionGuid = {F344DDCE-358B-4216-AEAB-BCAE116DA962}
 	EndGlobalSection
 EndGlobal
