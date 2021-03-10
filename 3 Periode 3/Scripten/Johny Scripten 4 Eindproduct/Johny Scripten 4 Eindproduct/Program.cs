@@ -165,7 +165,7 @@ namespace Johny_Scripten_4_Eindproduct
                     }
 
                     //clears the console, so new lines can be written like it's a new frame of the same game
-                    Console.Clear();
+                    Console.SetCursorPosition(0, 0);
 
                     //generate playing field, including border
                     string[][] playField = new string[playFieldHeight][];
