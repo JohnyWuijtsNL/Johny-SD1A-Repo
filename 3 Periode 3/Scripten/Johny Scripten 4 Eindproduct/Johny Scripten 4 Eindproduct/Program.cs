@@ -153,9 +153,8 @@ namespace Johny_Scripten_4_Eindproduct
                     //set random seed
                     rnd = new Random(System.Environment.TickCount);
 
-                    //makes what the player types invisible
-                    Console.ForegroundColor = Console.BackgroundColor;
-                    ConsoleKeyInfo pKey = Console.ReadKey();
+                    //get input
+                    ConsoleKeyInfo pKey = Console.ReadKey(true);
                     pressedKey = pKey.Key.ToString().ToLower();
 
                     //starts the timer if ran for the first time
