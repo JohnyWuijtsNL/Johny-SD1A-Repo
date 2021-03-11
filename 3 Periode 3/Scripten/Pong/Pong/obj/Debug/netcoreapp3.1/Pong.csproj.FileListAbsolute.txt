@@ -1,0 +1,12 @@
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Pong\Pong\bin\Debug\netcoreapp3.1\Pong.exe
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Pong\Pong\bin\Debug\netcoreapp3.1\Pong.deps.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Pong\Pong\bin\Debug\netcoreapp3.1\Pong.runtimeconfig.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Pong\Pong\bin\Debug\netcoreapp3.1\Pong.runtimeconfig.dev.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Pong\Pong\bin\Debug\netcoreapp3.1\Pong.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Pong\Pong\bin\Debug\netcoreapp3.1\Pong.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Pong\Pong\obj\Debug\netcoreapp3.1\Pong.AssemblyInfoInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Pong\Pong\obj\Debug\netcoreapp3.1\Pong.AssemblyInfo.cs
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Pong\Pong\obj\Debug\netcoreapp3.1\Pong.csproj.CoreCompileInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Pong\Pong\obj\Debug\netcoreapp3.1\Pong.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Pong\Pong\obj\Debug\netcoreapp3.1\Pong.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\3 Periode 3\Scripten\Pong\Pong\obj\Debug\netcoreapp3.1\Pong.genruntimeconfig.cache
