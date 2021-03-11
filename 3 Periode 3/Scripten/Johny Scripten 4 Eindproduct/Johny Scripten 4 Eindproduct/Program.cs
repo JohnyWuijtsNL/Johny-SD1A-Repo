@@ -157,11 +157,12 @@ namespace Johny_Scripten_4_Eindproduct
                     ConsoleKeyInfo pKey = Console.ReadKey(true);
                     pressedKey = pKey.Key.ToString().ToLower();
 
-                    //starts the timer if ran for the first time
+                    //starts the timer and clears console if ran for the first time
                     if (!gameStarted)
                     {
                         startTime = System.Environment.TickCount;
                         gameStarted = true;
+                        Console.Clear();
                     }
 
                     //clears the console, so new lines can be written like it's a new frame of the same game
