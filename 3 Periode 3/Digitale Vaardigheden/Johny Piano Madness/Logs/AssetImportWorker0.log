@@ -1,0 +1,637 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.2f1 (068178b99f32) revision 426360'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 18363.1440; Version 1909; 64bit' Language: 'en' Physical Memory: 16251 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Johny/Documents/GitHub/Johny-SD1A-Repo/3 Periode 3/Digitale Vaardigheden/Johny Piano Madness
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55405
+Successfully changed project path to: C:/Users/Johny/Documents/GitHub/Johny-SD1A-Repo/3 Periode 3/Digitale Vaardigheden/Johny Piano Madness
+C:/Users/Johny/Documents/GitHub/Johny-SD1A-Repo/3 Periode 3/Digitale Vaardigheden/Johny Piano Madness
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 30.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.2f1 (068178b99f32)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Johny/Documents/GitHub/Johny-SD1A-Repo/3 Periode 3/Digitale Vaardigheden/Johny Piano Madness/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   27.21.14.5256
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56376
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002523 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 30.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.994 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001012 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 35.16 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.812 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1805 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.8 MB.
+System memory in use after: 86.8 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2247.
+Total: 2.455000 ms (FindLiveObjects: 0.325200 ms CreateObjectMapping: 0.109700 ms MarkObjects: 1.882900 ms  DeleteObjects: 0.136200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Instruments/Piano/A#.wav
+  artifactKey: Guid(748ed10b8b95c31458d7fb5d4531e44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/A#.wav using Guid(748ed10b8b95c31458d7fb5d4531e44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4220a43066f3705f94900f8e38e6850d') in 0.110974 seconds
+  Import took 0.113682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Instruments/Piano/E1.wav
+  artifactKey: Guid(952fded3e7a5aaf4ea96fd7d2ef85fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/E1.wav using Guid(952fded3e7a5aaf4ea96fd7d2ef85fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b1ec8ef600bc56b7f2e582051414dfd') in 0.016962 seconds
+  Import took 0.020348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Instruments/Piano/D#.wav
+  artifactKey: Guid(1bf3036eda7fbab47aebef05ae9ada8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/D#.wav using Guid(1bf3036eda7fbab47aebef05ae9ada8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c452e68941abcbd03a1ecf8d72b9b15a') in 0.019338 seconds
+  Import took 0.022746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Instruments/Piano
+  artifactKey: Guid(3529895da621b7f45b43faa7490b1cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano using Guid(3529895da621b7f45b43faa7490b1cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67a4701f6f77da5109041048309ec00') in 0.009139 seconds
+  Import took 0.012707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Instruments/Piano/D1.wav
+  artifactKey: Guid(377377d948d24894a8c3f0846f99ab2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/D1.wav using Guid(377377d948d24894a8c3f0846f99ab2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c110d8394a8c84f1a8b7b3857e82fe7a') in 0.019032 seconds
+  Import took 0.023747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Instruments/Piano/E.wav
+  artifactKey: Guid(7d21190ba180aa34ab1ebd36c37dea27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/E.wav using Guid(7d21190ba180aa34ab1ebd36c37dea27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e87b54844c9cea61943ff9e5f7b0d49a') in 0.019462 seconds
+  Import took 0.022906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Instruments/Piano/G#.wav
+  artifactKey: Guid(9639a3e90368464429312a1732cbb29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/G#.wav using Guid(9639a3e90368464429312a1732cbb29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b9e8c319b8c0bccdbf98604a1a6099') in 0.015824 seconds
+  Import took 0.019295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Instruments/Piano/F.wav
+  artifactKey: Guid(8051004265ac89f4bb1ba7921f30ab63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/F.wav using Guid(8051004265ac89f4bb1ba7921f30ab63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3cb51ed18c23f5fbbf7891e1b415aa8') in 0.022727 seconds
+  Import took 0.026466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Instruments/Piano/D.wav
+  artifactKey: Guid(98f9cba40617823409a4c6efb7c9ca1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/D.wav using Guid(98f9cba40617823409a4c6efb7c9ca1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf622f35e95c020c9c0cee405050583b') in 0.015863 seconds
+  Import took 0.019184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Instruments/Piano/C#.wav
+  artifactKey: Guid(ec4d9bba193fd6242a3d28efe5f87ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/C#.wav using Guid(ec4d9bba193fd6242a3d28efe5f87ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '800a1c417e55267ea2ce26f5f8e940af') in 0.021123 seconds
+  Import took 0.025824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Instruments/Piano/D#1.wav
+  artifactKey: Guid(c17f37c9a110dc94bb44d2021a56db50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/D#1.wav using Guid(c17f37c9a110dc94bb44d2021a56db50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7298639853d9cc54583fa866aecbe026') in 0.015725 seconds
+  Import took 0.019516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Instruments/Piano/A.wav
+  artifactKey: Guid(c82c478979ddfec49844a4cafea001ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/A.wav using Guid(c82c478979ddfec49844a4cafea001ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9096401ec0ec7facc7faa657f435cb') in 0.014978 seconds
+  Import took 0.017938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Instruments/Piano/C.wav
+  artifactKey: Guid(828d0718d730f8f43810faefc7be7009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/C.wav using Guid(828d0718d730f8f43810faefc7be7009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca4aec5e4c838f030722267ca70aef88') in 0.015110 seconds
+  Import took 0.018049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Instruments/Piano/A.wav
+  artifactKey: Guid(c82c478979ddfec49844a4cafea001ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/A.wav using Guid(c82c478979ddfec49844a4cafea001ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9096401ec0ec7facc7faa657f435cb') in 0.007586 seconds
+  Import took 0.010134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Instruments/Piano/C#1.wav
+  artifactKey: Guid(508ec8e6595847949a0d816b3ae09dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/C#1.wav using Guid(508ec8e6595847949a0d816b3ae09dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd77571b6f7b2e4bd31b94b48cb996ea') in 0.015791 seconds
+  Import took 0.018697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Instruments/Piano/C1.wav
+  artifactKey: Guid(c599e9d7dc61de74baa875acbf541d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/C1.wav using Guid(c599e9d7dc61de74baa875acbf541d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92a610e0ae5cc745cc32af215764273c') in 0.015974 seconds
+  Import took 0.018585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/Instruments/Piano/B.wav
+  artifactKey: Guid(9e8f74e50232eea4fb16d552f5ae8cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/B.wav using Guid(9e8f74e50232eea4fb16d552f5ae8cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2d9b8d95bdc76496e0caf9c0ba6f36') in 0.013735 seconds
+  Import took 0.016116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Instruments
+  artifactKey: Guid(7807d5b94a1fb6d4897d2bcf829f0f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments using Guid(7807d5b94a1fb6d4897d2bcf829f0f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65bb57a9e640ba2dbc01fc25f4a9f6d7') in 0.006928 seconds
+  Import took 0.009296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Instruments/Piano/G.wav
+  artifactKey: Guid(ee616bc31f1a6344faaafbcfd7f993f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/G.wav using Guid(ee616bc31f1a6344faaafbcfd7f993f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '183acf91d121f2a9fdb18cf271cd8ca8') in 0.013233 seconds
+  Import took 0.015595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Instruments/Piano/F#.wav
+  artifactKey: Guid(b017e553fd66e074db7bf1eaff81dd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/F#.wav using Guid(b017e553fd66e074db7bf1eaff81dd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ba0462681daccb347aa2cc5045512b') in 0.013527 seconds
+  Import took 0.015800 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001045 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.707 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1787 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2259.
+Total: 1.620000 ms (FindLiveObjects: 0.171700 ms CreateObjectMapping: 0.073500 ms MarkObjects: 1.288200 ms  DeleteObjects: 0.085600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001059 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.713 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1787 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.2 MB.
+System memory in use after: 89.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2262.
+Total: 1.793500 ms (FindLiveObjects: 0.180800 ms CreateObjectMapping: 0.071800 ms MarkObjects: 1.450800 ms  DeleteObjects: 0.089300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001112 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.702 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1787 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.4 MB.
+System memory in use after: 89.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2265.
+Total: 1.778700 ms (FindLiveObjects: 0.164100 ms CreateObjectMapping: 0.059500 ms MarkObjects: 1.428200 ms  DeleteObjects: 0.126100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001009 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.743 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1787 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.5 MB.
+System memory in use after: 89.5 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2268.
+Total: 1.648900 ms (FindLiveObjects: 0.180100 ms CreateObjectMapping: 0.077200 ms MarkObjects: 1.302400 ms  DeleteObjects: 0.088400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 824.960318 seconds.
+  path: Assets/Instruments/Piano/A.wav
+  artifactKey: Guid(c82c478979ddfec49844a4cafea001ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/A.wav using Guid(c82c478979ddfec49844a4cafea001ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed74c476dce2a50f0f7ddc8cfddbf364') in 0.038394 seconds
+  Import took 0.040951 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001160 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.688 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1787 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.7 MB.
+System memory in use after: 89.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2272.
+Total: 1.789800 ms (FindLiveObjects: 0.165900 ms CreateObjectMapping: 0.065100 ms MarkObjects: 1.464000 ms  DeleteObjects: 0.094000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001200 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.688 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1787 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.8 MB.
+System memory in use after: 89.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2275.
+Total: 1.885300 ms (FindLiveObjects: 0.203900 ms CreateObjectMapping: 0.073500 ms MarkObjects: 1.431400 ms  DeleteObjects: 0.175700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001009 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.705 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1787 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.9 MB.
+System memory in use after: 89.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2278.
+Total: 1.757200 ms (FindLiveObjects: 0.157700 ms CreateObjectMapping: 0.058700 ms MarkObjects: 1.449900 ms  DeleteObjects: 0.090200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001051 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.707 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1787 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.1 MB.
+System memory in use after: 90.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2281.
+Total: 1.801100 ms (FindLiveObjects: 0.196500 ms CreateObjectMapping: 0.083900 ms MarkObjects: 1.430600 ms  DeleteObjects: 0.089500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 659.456442 seconds.
+  path: Assets/Instruments/Piano/A#.wav
+  artifactKey: Guid(748ed10b8b95c31458d7fb5d4531e44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/A#.wav using Guid(748ed10b8b95c31458d7fb5d4531e44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e20b7c7b788fa47d1e15071b1dc3a221') in 0.039365 seconds
+  Import took 0.041813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Instruments/Piano/E1.wav
+  artifactKey: Guid(952fded3e7a5aaf4ea96fd7d2ef85fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/E1.wav using Guid(952fded3e7a5aaf4ea96fd7d2ef85fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc3626681d1cf55d824ac95cd0bed6c6') in 0.011331 seconds
+  Import took 0.013761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/Instruments/Piano/D#.wav
+  artifactKey: Guid(1bf3036eda7fbab47aebef05ae9ada8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/D#.wav using Guid(1bf3036eda7fbab47aebef05ae9ada8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abcc326853253fd056870e72522f6460') in 0.018603 seconds
+  Import took 0.021670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Instruments/Piano/F.wav
+  artifactKey: Guid(8051004265ac89f4bb1ba7921f30ab63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/F.wav using Guid(8051004265ac89f4bb1ba7921f30ab63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '281c8ad2e89451cb1052719aa7a541db') in 0.015139 seconds
+  Import took 0.017631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Instruments/Piano/D1.wav
+  artifactKey: Guid(377377d948d24894a8c3f0846f99ab2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/D1.wav using Guid(377377d948d24894a8c3f0846f99ab2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3d7706d23ef6926b44817dce102e678') in 0.012890 seconds
+  Import took 0.015325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Instruments/Piano/E.wav
+  artifactKey: Guid(7d21190ba180aa34ab1ebd36c37dea27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/E.wav using Guid(7d21190ba180aa34ab1ebd36c37dea27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '732725a003e575cd5ded3dcaede5a231') in 0.011179 seconds
+  Import took 0.013636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Instruments/Piano/G#.wav
+  artifactKey: Guid(9639a3e90368464429312a1732cbb29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/G#.wav using Guid(9639a3e90368464429312a1732cbb29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4eb1711925e9e3b6d2af2eb640bcd67') in 0.012758 seconds
+  Import took 0.015156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Instruments/Piano/D.wav
+  artifactKey: Guid(98f9cba40617823409a4c6efb7c9ca1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/D.wav using Guid(98f9cba40617823409a4c6efb7c9ca1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '307fffc039b3f7c56ccc51a3744af738') in 0.011348 seconds
+  Import took 0.013791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Instruments/Piano/C#.wav
+  artifactKey: Guid(ec4d9bba193fd6242a3d28efe5f87ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/C#.wav using Guid(ec4d9bba193fd6242a3d28efe5f87ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29434cfac753d83df7d2a0bc822e1ea9') in 0.014715 seconds
+  Import took 0.017555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Instruments/Piano/D#1.wav
+  artifactKey: Guid(c17f37c9a110dc94bb44d2021a56db50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/D#1.wav using Guid(c17f37c9a110dc94bb44d2021a56db50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ff4bcc0c0b4a355ed33643095f22539') in 0.012278 seconds
+  Import took 0.014687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Instruments/Piano/C.wav
+  artifactKey: Guid(828d0718d730f8f43810faefc7be7009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/C.wav using Guid(828d0718d730f8f43810faefc7be7009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cb12ede795a763dada9ea220294b4f0') in 0.016983 seconds
+  Import took 0.019531 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Instruments/Piano/C#1.wav
+  artifactKey: Guid(508ec8e6595847949a0d816b3ae09dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/C#1.wav using Guid(508ec8e6595847949a0d816b3ae09dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b0b0e41ffa9bde5d1183de53bfeb19') in 0.030838 seconds
+  Import took 0.033730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Instruments/Piano/C1.wav
+  artifactKey: Guid(c599e9d7dc61de74baa875acbf541d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/C1.wav using Guid(c599e9d7dc61de74baa875acbf541d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab2fc6e9c9d2940ebb182a1d667722ea') in 0.010991 seconds
+  Import took 0.013374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Instruments/Piano/B.wav
+  artifactKey: Guid(9e8f74e50232eea4fb16d552f5ae8cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/B.wav using Guid(9e8f74e50232eea4fb16d552f5ae8cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a65904d908ea6d7a9017ccef2ae3b43') in 0.014573 seconds
+  Import took 0.017057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/Instruments/Piano/G.wav
+  artifactKey: Guid(ee616bc31f1a6344faaafbcfd7f993f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/G.wav using Guid(ee616bc31f1a6344faaafbcfd7f993f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c60eb80ae9f347c6c2695598eef9c0ab') in 0.011785 seconds
+  Import took 0.014250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Instruments/Piano/F#.wav
+  artifactKey: Guid(b017e553fd66e074db7bf1eaff81dd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Instruments/Piano/F#.wav using Guid(b017e553fd66e074db7bf1eaff81dd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bb458d9a18a369a93ad36b09fdb325c') in 0.019727 seconds
+  Import took 0.022088 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001113 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.697 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1787 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.3 MB.
+System memory in use after: 90.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2285.
+Total: 1.633000 ms (FindLiveObjects: 0.222300 ms CreateObjectMapping: 0.063700 ms MarkObjects: 1.224400 ms  DeleteObjects: 0.121900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001340 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.712 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1787 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.4 MB.
+System memory in use after: 90.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2288.
+Total: 1.832400 ms (FindLiveObjects: 0.196400 ms CreateObjectMapping: 0.068100 ms MarkObjects: 1.481200 ms  DeleteObjects: 0.086100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001053 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.707 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1787 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.6 MB.
+System memory in use after: 90.6 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2291.
+Total: 2.092700 ms (FindLiveObjects: 0.192000 ms CreateObjectMapping: 0.080700 ms MarkObjects: 1.673300 ms  DeleteObjects: 0.146000 ms)
+
