@@ -171,17 +171,17 @@ namespace Johny_Scripten_5_Eindproduct
                     //if the player touches an apple, grow, request new apple and increase game speed
                     if (playerY == appleY && playerX == appleX)
                     {
-                        if(appleType <=75)
+                        if(appleType <=60)
                         {
                             snakeLength += 1;
                             score += 1;
                         }
-                        else if (appleType <= 90)
+                        else if (appleType <= 80)
                         {
                             snakeLength += 4;
                             score += 2;
                         }
-                        else if (appleType <= 98)
+                        else if (appleType <= 95)
                         {
                             snakeLength += 9;
                             score += 6;
@@ -241,17 +241,17 @@ namespace Johny_Scripten_5_Eindproduct
                             }
                             else if (verticalLine == prizeSprite)
                             {
-                                if (appleType <= 75)
+                                if (appleType <= 60)
                                 {
                                     Console.BackgroundColor = ConsoleColor.Yellow;
                                     Console.ForegroundColor = ConsoleColor.Yellow;
                                 }
-                                else if (appleType <= 90)
+                                else if (appleType <= 80)
                                 {
                                     Console.BackgroundColor = ConsoleColor.Green;
                                     Console.ForegroundColor = ConsoleColor.Green;
                                 }
-                                else if (appleType <= 98)
+                                else if (appleType <= 95)
                                 {
                                     if (frames % 8 <= 3)
                                     {
