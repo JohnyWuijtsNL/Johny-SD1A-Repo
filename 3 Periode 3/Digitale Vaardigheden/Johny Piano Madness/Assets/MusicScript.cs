@@ -8,6 +8,10 @@ public class MusicScript : MonoBehaviour
     AudioClip[] keys;
     [SerializeField]
     AudioSource player;
+    bool isPlaying = false;
+    float songSpeed = 10 + 2 / 3;
+    int beat = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -87,7 +91,88 @@ public class MusicScript : MonoBehaviour
             {
                 player.PlayOneShot(keys[16]);
             }
+            if (Input.GetKeyDown(KeyCode.Backslash))
+            {
+                player.PlayOneShot(keys[17]);
+            }
         }
+
+    }
+
+    public void SongLoader()
+    {
+        isPlaying = !isPlaying;
+        if (isPlaying)
+        {
+            StartCoroutine(SongPlayer());
+        }
+        else
+        {
+            StopAllCoroutines();
+            beat = 1;
+        }
+    }
+
+    IEnumerator SongPlayer()
+    {
+        while (true)
+        {
+            if (beat == 1 || beat == 5)
+            {
+                player.PlayOneShot(keys[4]);
+                yield return new WaitForSeconds(4 / songSpeed);
+                player.PlayOneShot(keys[11]);
+                yield return new WaitForSeconds(4 / songSpeed);
+                player.PlayOneShot(keys[9]);
+                yield return new WaitForSeconds(4 / songSpeed);
+                player.PlayOneShot(keys[4]);
+                yield return new WaitForSeconds(4 / songSpeed);
+            }
+            if (beat == 2 || beat == 4 || beat == 6)
+            {
+                player.PlayOneShot(keys[8]);
+                yield return new WaitForSeconds(6 / songSpeed);
+                player.PlayOneShot(keys[8]);
+                yield return new WaitForSeconds(6 / songSpeed);
+                player.PlayOneShot(keys[9]);
+                yield return new WaitForSeconds(4 / songSpeed);
+            }
+            if (beat == 3)
+            {
+                yield return new WaitForSeconds(4 / songSpeed);
+                player.PlayOneShot(keys[4]);
+                yield return new WaitForSeconds(4 / songSpeed);
+                player.PlayOneShot(keys[9]);
+                yield return new WaitForSeconds(4 / songSpeed);
+                player.PlayOneShot(keys[4]);
+                yield return new WaitForSeconds(4 / songSpeed);
+            }
+            if (beat == 7)
+            {
+                yield return new WaitForSeconds(4 / songSpeed);
+                player.PlayOneShot(keys[4]);
+                yield return new WaitForSeconds(4 / songSpeed);
+                player.PlayOneShot(keys[9]);
+                yield return new WaitForSeconds(4 / songSpeed);
+                player.PlayOneShot(keys[13]);
+                yield return new WaitForSeconds(4 / songSpeed);
+            }
+            if (beat == 8)
+            {
+                player.PlayOneShot(keys[11]);
+                yield return new WaitForSeconds(6 / songSpeed);
+                player.PlayOneShot(keys[9]);
+                yield return new WaitForSeconds(6 / songSpeed);
+                player.PlayOneShot(keys[11]);
+                yield return new WaitForSeconds(4 / songSpeed);
+                beat = 0;
+            }
+            beat++;
+        }
+    }
+
+    void Beat1()
+    {
 
     }
 }

@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.2/release' branch; Version is '2020.2.2f1 (068178b99f32) revision 426360'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 18363.1379; Version 1909; 64bit' Language: 'en' Physical Memory: 16251 MB
+OS: 'Windows 10 Home; OS build 19042.867; Version 2009; 64bit' Language: 'en' Physical Memory: 16251 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ C:/Users/Johny/Documents/GitHub/Johny-SD1A-Repo/3 Periode 3/Digitale Vaardighede
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59480
+50384
 Successfully changed project path to: C:/Users/Johny/Documents/GitHub/Johny-SD1A-Repo/3 Periode 3/Digitale Vaardigheden/Johny Piano Madness
 C:/Users/Johny/Documents/GitHub/Johny-SD1A-Repo/3 Periode 3/Digitale Vaardigheden/Johny Piano Madness
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 29.72 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 30.28 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
@@ -35,348 +35,87 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002382 seconds.
+Registered in 0.002301 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 29.45 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 28.30 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.051 seconds
+- Completed reload, in  0.959 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001050 seconds.
+Registered in 0.000928 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 29.60 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 29.52 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.769 seconds
+- Completed reload, in  0.736 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1810 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.0 MB.
+System memory in use after: 87.0 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2253.
+Total: 1.981500 ms (FindLiveObjects: 0.189800 ms CreateObjectMapping: 0.168000 ms MarkObjects: 1.515600 ms  DeleteObjects: 0.106800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(a4a0f783a04c8ea44b6a7bb59cc36de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(a4a0f783a04c8ea44b6a7bb59cc36de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8afa4b877805999cdd0424c9f45cada0') in 0.014894 seconds
+  Import took 0.017656 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 50.1 MB.
+System memory in use after: 50.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2253.
+Total: 2.233100 ms (FindLiveObjects: 0.163100 ms CreateObjectMapping: 0.057900 ms MarkObjects: 1.922200 ms  DeleteObjects: 0.088900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000959 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.783 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1792 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 84.9 MB.
-System memory in use after: 84.9 MB.
+System memory in use before: 86.3 MB.
+System memory in use after: 86.3 MB.
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2233.
-Total: 1.737500 ms (FindLiveObjects: 0.196500 ms CreateObjectMapping: 0.085800 ms MarkObjects: 1.352300 ms  DeleteObjects: 0.101900 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Assets/C_s1.wav
-  artifactKey: Guid(12cb35ba0f5c84d41864d01aa7fb35da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/C_s1.wav using Guid(12cb35ba0f5c84d41864d01aa7fb35da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77af1cd2f388e57a17c5c44245496e4') in 0.137556 seconds
-  Import took 0.142216 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Assets/Steel_Drum/G_Drum.wav
-  artifactKey: Guid(5f1bc419f6a4f734581b25274f823a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/G_Drum.wav using Guid(5f1bc419f6a4f734581b25274f823a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a7fc04c38e137f51c5593e5ed4d5861') in 0.017719 seconds
-  Import took 0.020262 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Assets/Steel_Drum/Gq_Drum.wav
-  artifactKey: Guid(b385a82e7a7880e4c96739a046955ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/Gq_Drum.wav using Guid(b385a82e7a7880e4c96739a046955ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d2ca6a70ebfd3b1b8a4a94b22749fdd') in 0.019117 seconds
-  Import took 0.021633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Assets/Steel_Drum/C_Drum.wav
-  artifactKey: Guid(f29d1d8231ce81343be26388147918be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/C_Drum.wav using Guid(f29d1d8231ce81343be26388147918be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '735cfc948ebeb9f6f8d88c954b4dc993') in 0.016536 seconds
-  Import took 0.019388 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Assets/Steel_Drum/F_Drum.wav
-  artifactKey: Guid(9c797e612def608439a48abb58b167e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/F_Drum.wav using Guid(9c797e612def608439a48abb58b167e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177ea1c5fe34d092aa80a3cae4bf3343') in 0.016300 seconds
-  Import took 0.019988 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Assets/A.wav
-  artifactKey: Guid(437289c6a1e0a9742b7a155d02299adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/A.wav using Guid(437289c6a1e0a9742b7a155d02299adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7feb2a93018779afdada514ae7fb89aa') in 0.016253 seconds
-  Import took 0.019261 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/Assets/Steel_Drum/F1_Drum.wav
-  artifactKey: Guid(e5e87070d9d076040bca38398983c3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/F1_Drum.wav using Guid(e5e87070d9d076040bca38398983c3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b230e9fdcc6ea36b5316ff8cb7161b5') in 0.017834 seconds
-  Import took 0.020399 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/Assets/C1.wav
-  artifactKey: Guid(280b10b7f1500cf42a0134d29f2d1929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/C1.wav using Guid(280b10b7f1500cf42a0134d29f2d1929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba45b7b0aadff5746e20d47770f00c81') in 0.015223 seconds
-  Import took 0.018171 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Assets/Steel_Drum/C1_Drum.wav
-  artifactKey: Guid(f70b99eea07b9b248a19a5407aa58543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/C1_Drum.wav using Guid(f70b99eea07b9b248a19a5407aa58543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ec22ddd30d3cef693e7f3c47a88061f') in 0.015168 seconds
-  Import took 0.017480 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/Assets/Steel_Drum
-  artifactKey: Guid(f27eb700da0523c4f9c52137c226ebea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum using Guid(f27eb700da0523c4f9c52137c226ebea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4779a3afe175f2ed01694ce85c804d1b') in 0.005772 seconds
-  Import took 0.008075 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000119 seconds.
-  path: Assets/Assets/B.wav
-  artifactKey: Guid(ade2f8912c14b564da3ad9c515ae0981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/B.wav using Guid(ade2f8912c14b564da3ad9c515ae0981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd727edd7db30d1c226beae7aee486ba6') in 0.019159 seconds
-  Import took 0.021537 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Assets/Bb.wav
-  artifactKey: Guid(2cd9de80a44498e48ba26d01a8c6359d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Bb.wav using Guid(2cd9de80a44498e48ba26d01a8c6359d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0137f212ff94eaced7e5c56396fda694') in 0.015207 seconds
-  Import took 0.017547 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/Assets/Steel_Drum/D_Drum.wav
-  artifactKey: Guid(d2df3f9919cffc8429abadd9a90ac9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/D_Drum.wav using Guid(d2df3f9919cffc8429abadd9a90ac9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '030bc21d637d8753ec8ab058fd05b1cc') in 0.014357 seconds
-  Import took 0.016621 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/Assets/G_s.wav
-  artifactKey: Guid(95a276cccefded84ea86eb93825ca009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/G_s.wav using Guid(95a276cccefded84ea86eb93825ca009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc66c433b6ba7518533f31bf7d2e65e2') in 0.015111 seconds
-  Import took 0.018143 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/Assets/Steel_Drum/E_Drum.wav
-  artifactKey: Guid(d2c1c5f4dc1143245abac6c89320a4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/E_Drum.wav using Guid(d2c1c5f4dc1143245abac6c89320a4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6631a157198746b6192cce3fbfe40c40') in 0.014643 seconds
-  Import took 0.017041 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/Assets/Steel_Drum/Dq_Drum.wav
-  artifactKey: Guid(4316170f2bc76204ebc045ad392d37ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/Dq_Drum.wav using Guid(4316170f2bc76204ebc045ad392d37ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd094b9153a74ba58dbaee516fd74c82a') in 0.014164 seconds
-  Import took 0.016502 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Assets/Steel_Drum/Cq_Drum.wav
-  artifactKey: Guid(99445839b6e82f040b43c323a0a08dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/Cq_Drum.wav using Guid(99445839b6e82f040b43c323a0a08dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9219ee23abd0321054418ba91cca856') in 0.014300 seconds
-  Import took 0.016595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Assets/D1.wav
-  artifactKey: Guid(58d04ed31d393994dbf3db733b240581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/D1.wav using Guid(58d04ed31d393994dbf3db733b240581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '340c374fc18fc5608c41d1440388267a') in 0.014909 seconds
-  Import took 0.017246 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Assets/D_s1.wav
-  artifactKey: Guid(15443dc1b1e72054fa02617aea225e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/D_s1.wav using Guid(15443dc1b1e72054fa02617aea225e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f6bfa92793ad75ae44d31545aa613e0') in 0.014594 seconds
-  Import took 0.016885 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Assets/C.wav
-  artifactKey: Guid(da5b59ed022987c4b840d487e34ffb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/C.wav using Guid(da5b59ed022987c4b840d487e34ffb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc569a18aaa7268a9aeb764be60d47ad') in 0.017945 seconds
-  Import took 0.020296 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/Assets/E1.wav
-  artifactKey: Guid(580685b287e569f4a92758ec00837252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/E1.wav using Guid(580685b287e569f4a92758ec00837252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ad5de48ff708f222691eccf402f1e0') in 0.015802 seconds
-  Import took 0.018045 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/Assets/E.wav
-  artifactKey: Guid(856286b4c90ed0d43bcb3c9af36e6b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/E.wav using Guid(856286b4c90ed0d43bcb3c9af36e6b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b61aa4e221c1b44aa18643b85a0d6e') in 0.016264 seconds
-  Import took 0.018483 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Assets/Steel_Drum/A_Drum.wav
-  artifactKey: Guid(66d7908c5a033c0449f7799d5dcf6d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/A_Drum.wav using Guid(66d7908c5a033c0449f7799d5dcf6d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b339b8c081182c07b5640a2634d554b9') in 0.018805 seconds
-  Import took 0.021069 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000127 seconds.
-  path: Assets/Assets/F.wav
-  artifactKey: Guid(2f10ac90ffbe80f45bbbcc014299d6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/F.wav using Guid(2f10ac90ffbe80f45bbbcc014299d6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f739fef2ed5e98a56c587a1e98bf8fed') in 0.021110 seconds
-  Import took 0.023250 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Assets/Steel_Drum/E1_Drum.wav
-  artifactKey: Guid(749b29ac581110f4c9956456a8bed264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/E1_Drum.wav using Guid(749b29ac581110f4c9956456a8bed264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1732eca2483fcc5c17c8acbc0dfa3f6') in 0.014199 seconds
-  Import took 0.016437 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000126 seconds.
-  path: Assets/Assets/Steel_Drum/D1_Drum.wav
-  artifactKey: Guid(e714c24ce540f324d97b8a80940c8914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/D1_Drum.wav using Guid(e714c24ce540f324d97b8a80940c8914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77953a77a55cab103fa59532f00cd896') in 0.014307 seconds
-  Import took 0.016577 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/Assets/Steel_Drum/Dq1_Drum.wav
-  artifactKey: Guid(1b1afa40977e7a04a93e26486c42bddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/Dq1_Drum.wav using Guid(1b1afa40977e7a04a93e26486c42bddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65ae923c3eb3293bdb9055cd7b54a2e2') in 0.014965 seconds
-  Import took 0.017270 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/Assets/F1.wav
-  artifactKey: Guid(b89fe4f18b1d4714e9630308a5df880c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/F1.wav using Guid(b89fe4f18b1d4714e9630308a5df880c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '347e430ea44784fb2e7b9e754004010d') in 0.015519 seconds
-  Import took 0.017814 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000127 seconds.
-  path: Assets/Assets/G.wav
-  artifactKey: Guid(0c169580775390b42b475e68a9cd63de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/G.wav using Guid(0c169580775390b42b475e68a9cd63de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a5bdc15d66801b4eb05375d5fdeedcc') in 0.014720 seconds
-  Import took 0.017004 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/Assets/Steel_Drum/Bb_Drum.wav
-  artifactKey: Guid(775120c175455c24483ba644a8bf769a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/Bb_Drum.wav using Guid(775120c175455c24483ba644a8bf769a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb642ae703fdaaf31759810de2a08185') in 0.015109 seconds
-  Import took 0.017394 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Assets/Steel_Drum/Cq1_Drum.wav
-  artifactKey: Guid(8f562ecf68be88446aad6b772e5aad1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/Cq1_Drum.wav using Guid(8f562ecf68be88446aad6b772e5aad1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '727abf02031cfa3a9365da462b840bf0') in 0.017335 seconds
-  Import took 0.019580 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/Assets
-  artifactKey: Guid(f2ee465d8824ebc43858cbaa56aed29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets using Guid(f2ee465d8824ebc43858cbaa56aed29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ea8ad86cdf0d44fc2d1de7b42da62c') in 0.006099 seconds
-  Import took 0.008378 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Assets/Steel_Drum/Fq_Drum.wav
-  artifactKey: Guid(97f6da9f1d72d1c42ad5f3290c4b9595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/Fq_Drum.wav using Guid(97f6da9f1d72d1c42ad5f3290c4b9595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d64b534292ba54e16f86653df7d4e93') in 0.018723 seconds
-  Import took 0.021045 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/Assets/F_s.wav
-  artifactKey: Guid(48ec818bce05b1d4aa988e07349adda1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/F_s.wav using Guid(48ec818bce05b1d4aa988e07349adda1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d17b93fc0b75300b59b0a3a6af414ab') in 0.014519 seconds
-  Import took 0.016803 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/Assets/C_s.wav
-  artifactKey: Guid(95719f3110bea9441bb81e27e3374cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/C_s.wav using Guid(95719f3110bea9441bb81e27e3374cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '049d7c16bc5eecdb2ed71e81ed04e2d6') in 0.018783 seconds
-  Import took 0.021149 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/Assets/D_s.wav
-  artifactKey: Guid(23762d692150e2142b01f7791cb13cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/D_s.wav using Guid(23762d692150e2142b01f7791cb13cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11b87fa6a80a4406b90475924b42fdc9') in 0.016156 seconds
-  Import took 0.018507 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/Assets/D.wav
-  artifactKey: Guid(7ad19bd2b676f0845868eed009957bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/D.wav using Guid(7ad19bd2b676f0845868eed009957bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196ba061d75066122619e2d156ed286a') in 0.018900 seconds
-  Import took 0.021433 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/Assets/Steel_Drum/B_Drum.wav
-  artifactKey: Guid(9ac9d41d23aa58544b506042de30a42b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Steel_Drum/B_Drum.wav using Guid(9ac9d41d23aa58544b506042de30a42b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '248a0d95a2c7243d10df40ee649834a9') in 0.017508 seconds
-  Import took 0.019743 seconds .
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2256.
+Total: 2.123200 ms (FindLiveObjects: 0.226600 ms CreateObjectMapping: 0.097700 ms MarkObjects: 1.691000 ms  DeleteObjects: 0.106400 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -57,6 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\MusicScript.cs" />
+    <Compile Include="Assets\TileScript.cs" />
+    <Compile Include="Assets\TileSpawnScript.cs" />
+    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\SceneLoaderScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
