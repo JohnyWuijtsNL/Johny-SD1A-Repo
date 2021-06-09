@@ -91,10 +91,6 @@ public class MusicScript : MonoBehaviour
             {
                 player.PlayOneShot(keys[16]);
             }
-            if (Input.GetKeyDown(KeyCode.Backslash))
-            {
-                player.PlayOneShot(keys[17]);
-            }
         }
 
     }
