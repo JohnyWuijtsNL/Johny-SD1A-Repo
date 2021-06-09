@@ -1,0 +1,13 @@
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\4 Periode 4\Scripten\Johny Scripten Eindopdracht\Johny Scripten Eindopdracht\bin\Debug\netcoreapp3.1\Johny Scripten Eindopdracht.exe
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\4 Periode 4\Scripten\Johny Scripten Eindopdracht\Johny Scripten Eindopdracht\bin\Debug\netcoreapp3.1\Johny Scripten Eindopdracht.deps.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\4 Periode 4\Scripten\Johny Scripten Eindopdracht\Johny Scripten Eindopdracht\bin\Debug\netcoreapp3.1\Johny Scripten Eindopdracht.runtimeconfig.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\4 Periode 4\Scripten\Johny Scripten Eindopdracht\Johny Scripten Eindopdracht\bin\Debug\netcoreapp3.1\Johny Scripten Eindopdracht.runtimeconfig.dev.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\4 Periode 4\Scripten\Johny Scripten Eindopdracht\Johny Scripten Eindopdracht\bin\Debug\netcoreapp3.1\Johny Scripten Eindopdracht.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\4 Periode 4\Scripten\Johny Scripten Eindopdracht\Johny Scripten Eindopdracht\bin\Debug\netcoreapp3.1\Johny Scripten Eindopdracht.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\4 Periode 4\Scripten\Johny Scripten Eindopdracht\Johny Scripten Eindopdracht\obj\Debug\netcoreapp3.1\Johny Scripten Eindopdracht.csprojAssemblyReference.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\4 Periode 4\Scripten\Johny Scripten Eindopdracht\Johny Scripten Eindopdracht\obj\Debug\netcoreapp3.1\Johny Scripten Eindopdracht.AssemblyInfoInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\4 Periode 4\Scripten\Johny Scripten Eindopdracht\Johny Scripten Eindopdracht\obj\Debug\netcoreapp3.1\Johny Scripten Eindopdracht.AssemblyInfo.cs
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\4 Periode 4\Scripten\Johny Scripten Eindopdracht\Johny Scripten Eindopdracht\obj\Debug\netcoreapp3.1\Johny Scripten Eindopdracht.csproj.CoreCompileInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\4 Periode 4\Scripten\Johny Scripten Eindopdracht\Johny Scripten Eindopdracht\obj\Debug\netcoreapp3.1\Johny Scripten Eindopdracht.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\4 Periode 4\Scripten\Johny Scripten Eindopdracht\Johny Scripten Eindopdracht\obj\Debug\netcoreapp3.1\Johny Scripten Eindopdracht.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\4 Periode 4\Scripten\Johny Scripten Eindopdracht\Johny Scripten Eindopdracht\obj\Debug\netcoreapp3.1\Johny Scripten Eindopdracht.genruntimeconfig.cache
