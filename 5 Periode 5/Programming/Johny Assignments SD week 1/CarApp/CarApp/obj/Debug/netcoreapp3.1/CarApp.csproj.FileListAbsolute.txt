@@ -1,0 +1,12 @@
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\CarApp\CarApp\bin\Debug\netcoreapp3.1\CarApp.exe
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\CarApp\CarApp\bin\Debug\netcoreapp3.1\CarApp.deps.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\CarApp\CarApp\bin\Debug\netcoreapp3.1\CarApp.runtimeconfig.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\CarApp\CarApp\bin\Debug\netcoreapp3.1\CarApp.runtimeconfig.dev.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\CarApp\CarApp\bin\Debug\netcoreapp3.1\CarApp.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\CarApp\CarApp\bin\Debug\netcoreapp3.1\CarApp.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\CarApp\CarApp\obj\Debug\netcoreapp3.1\CarApp.AssemblyInfoInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\CarApp\CarApp\obj\Debug\netcoreapp3.1\CarApp.AssemblyInfo.cs
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\CarApp\CarApp\obj\Debug\netcoreapp3.1\CarApp.csproj.CoreCompileInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\CarApp\CarApp\obj\Debug\netcoreapp3.1\CarApp.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\CarApp\CarApp\obj\Debug\netcoreapp3.1\CarApp.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\CarApp\CarApp\obj\Debug\netcoreapp3.1\CarApp.genruntimeconfig.cache

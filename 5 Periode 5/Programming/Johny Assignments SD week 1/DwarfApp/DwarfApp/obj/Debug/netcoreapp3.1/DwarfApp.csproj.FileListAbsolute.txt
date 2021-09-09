@@ -1,0 +1,13 @@
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\DwarfApp\DwarfApp\bin\Debug\netcoreapp3.1\DwarfApp.exe
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\DwarfApp\DwarfApp\bin\Debug\netcoreapp3.1\DwarfApp.deps.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\DwarfApp\DwarfApp\bin\Debug\netcoreapp3.1\DwarfApp.runtimeconfig.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\DwarfApp\DwarfApp\bin\Debug\netcoreapp3.1\DwarfApp.runtimeconfig.dev.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\DwarfApp\DwarfApp\bin\Debug\netcoreapp3.1\DwarfApp.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\DwarfApp\DwarfApp\bin\Debug\netcoreapp3.1\DwarfApp.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\DwarfApp\DwarfApp\obj\Debug\netcoreapp3.1\DwarfApp.csprojAssemblyReference.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\DwarfApp\DwarfApp\obj\Debug\netcoreapp3.1\DwarfApp.AssemblyInfoInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\DwarfApp\DwarfApp\obj\Debug\netcoreapp3.1\DwarfApp.AssemblyInfo.cs
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\DwarfApp\DwarfApp\obj\Debug\netcoreapp3.1\DwarfApp.csproj.CoreCompileInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\DwarfApp\DwarfApp\obj\Debug\netcoreapp3.1\DwarfApp.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\DwarfApp\DwarfApp\obj\Debug\netcoreapp3.1\DwarfApp.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\Johny Assignments SD week 1\DwarfApp\DwarfApp\obj\Debug\netcoreapp3.1\DwarfApp.genruntimeconfig.cache
