@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://TestEnemy.png" type="Texture" id=1]
+[ext_resource path="res://TestEnemySprite.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[node name="TestEnemy" type="Node2D"]
+
+[node name="TestEnemySprite" type="Sprite" parent="."]
+scale = Vector2( 0.1, 0.100491 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="RigidBody2D" type="RigidBody2D" parent="TestEnemySprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TestEnemySprite/RigidBody2D"]
+scale = Vector2( 10, 10 )
+shape = SubResource( 1 )
+
+[node name="TargetPosition" type="Position2D" parent="."]

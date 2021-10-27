@@ -1,0 +1,84 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://mario.png" type="Texture" id=1]
+[ext_resource path="res://pizza.png" type="Texture" id=2]
+[ext_resource path="res://Jonko_Johnnie_idle1.png" type="Texture" id=3]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Sprite
+
+var going_left = true
+var growing = true
+var original_scale
+
+func _ready():
+	original_scale = scale.x
+
+func _process(delta):
+	if going_left:
+		if rotation_degrees < 15:
+			rotation_degrees += delta * 100
+		else:
+			going_left = false
+	else:
+		if rotation_degrees > -15:
+			rotation_degrees -= delta * 100
+		else:
+			going_left = true
+			
+			
+	if growing:
+		if scale.x < 1.5 * original_scale:
+			scale += delta * Vector2(1, 1) * original_scale
+		else:
+			growing = false
+	else:
+		if scale.x > 0.25 * original_scale:
+			scale -= delta * Vector2(1, 1) * original_scale
+		else:
+			growing = true
+		
+	
+"
+
+[sub_resource type="ViewportTexture" id=2]
+viewport_path = NodePath("Viewport")
+
+[node name="PixelTest" type="Node"]
+
+[node name="Player" type="Sprite" parent="."]
+position = Vector2( 226.69, 56 )
+rotation = -1.74846e-07
+scale = Vector2( 1, 1 )
+texture = ExtResource( 3 )
+script = SubResource( 1 )
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 384, 216 )
+transparent_bg = true
+render_target_v_flip = true
+
+[node name="Pizza" type="Sprite" parent="Viewport"]
+position = Vector2( 56, 56 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 2 )
+script = SubResource( 1 )
+
+[node name="MarioPixel" type="Sprite" parent="Viewport"]
+position = Vector2( 123, 56 )
+rotation = 6.28319
+texture = ExtResource( 1 )
+script = SubResource( 1 )
+
+[node name="ViewportTest" type="TextureRect" parent="."]
+margin_right = 384.0
+margin_bottom = 216.0
+texture = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarioOriginal" type="Sprite" parent="."]
+position = Vector2( 182, 56 )
+texture = ExtResource( 1 )
+script = SubResource( 1 )
