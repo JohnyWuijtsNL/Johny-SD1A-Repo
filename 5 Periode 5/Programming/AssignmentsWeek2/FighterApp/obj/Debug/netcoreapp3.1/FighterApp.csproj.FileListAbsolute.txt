@@ -1,0 +1,13 @@
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\FighterApp\bin\Debug\netcoreapp3.1\FighterApp.exe
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\FighterApp\bin\Debug\netcoreapp3.1\FighterApp.deps.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\FighterApp\bin\Debug\netcoreapp3.1\FighterApp.runtimeconfig.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\FighterApp\bin\Debug\netcoreapp3.1\FighterApp.runtimeconfig.dev.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\FighterApp\bin\Debug\netcoreapp3.1\FighterApp.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\FighterApp\bin\Debug\netcoreapp3.1\FighterApp.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\FighterApp\obj\Debug\netcoreapp3.1\FighterApp.csprojAssemblyReference.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\FighterApp\obj\Debug\netcoreapp3.1\FighterApp.AssemblyInfoInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\FighterApp\obj\Debug\netcoreapp3.1\FighterApp.AssemblyInfo.cs
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\FighterApp\obj\Debug\netcoreapp3.1\FighterApp.csproj.CoreCompileInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\FighterApp\obj\Debug\netcoreapp3.1\FighterApp.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\FighterApp\obj\Debug\netcoreapp3.1\FighterApp.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\FighterApp\obj\Debug\netcoreapp3.1\FighterApp.genruntimeconfig.cache

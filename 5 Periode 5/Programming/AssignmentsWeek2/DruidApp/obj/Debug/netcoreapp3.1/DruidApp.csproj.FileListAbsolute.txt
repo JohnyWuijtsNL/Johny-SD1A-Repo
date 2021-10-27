@@ -1,0 +1,12 @@
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\DruidApp\bin\Debug\netcoreapp3.1\DruidApp.exe
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\DruidApp\bin\Debug\netcoreapp3.1\DruidApp.deps.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\DruidApp\bin\Debug\netcoreapp3.1\DruidApp.runtimeconfig.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\DruidApp\bin\Debug\netcoreapp3.1\DruidApp.runtimeconfig.dev.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\DruidApp\bin\Debug\netcoreapp3.1\DruidApp.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\DruidApp\bin\Debug\netcoreapp3.1\DruidApp.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\DruidApp\obj\Debug\netcoreapp3.1\DruidApp.AssemblyInfoInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\DruidApp\obj\Debug\netcoreapp3.1\DruidApp.AssemblyInfo.cs
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\DruidApp\obj\Debug\netcoreapp3.1\DruidApp.csproj.CoreCompileInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\DruidApp\obj\Debug\netcoreapp3.1\DruidApp.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\DruidApp\obj\Debug\netcoreapp3.1\DruidApp.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\DruidApp\obj\Debug\netcoreapp3.1\DruidApp.genruntimeconfig.cache

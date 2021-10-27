@@ -1,0 +1,13 @@
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\RangerApp\bin\Debug\netcoreapp3.1\RangerApp.exe
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\RangerApp\bin\Debug\netcoreapp3.1\RangerApp.deps.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\RangerApp\bin\Debug\netcoreapp3.1\RangerApp.runtimeconfig.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\RangerApp\bin\Debug\netcoreapp3.1\RangerApp.runtimeconfig.dev.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\RangerApp\bin\Debug\netcoreapp3.1\RangerApp.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\RangerApp\bin\Debug\netcoreapp3.1\RangerApp.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\RangerApp\obj\Debug\netcoreapp3.1\RangerApp.csprojAssemblyReference.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\RangerApp\obj\Debug\netcoreapp3.1\RangerApp.AssemblyInfoInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\RangerApp\obj\Debug\netcoreapp3.1\RangerApp.AssemblyInfo.cs
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\RangerApp\obj\Debug\netcoreapp3.1\RangerApp.csproj.CoreCompileInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\RangerApp\obj\Debug\netcoreapp3.1\RangerApp.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\RangerApp\obj\Debug\netcoreapp3.1\RangerApp.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek2\RangerApp\obj\Debug\netcoreapp3.1\RangerApp.genruntimeconfig.cache
