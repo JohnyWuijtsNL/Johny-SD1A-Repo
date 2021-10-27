@@ -1,0 +1,13 @@
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek4\SquirrelGame\bin\Debug\netcoreapp3.1\SquirrelGame.exe
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek4\SquirrelGame\bin\Debug\netcoreapp3.1\SquirrelGame.deps.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek4\SquirrelGame\bin\Debug\netcoreapp3.1\SquirrelGame.runtimeconfig.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek4\SquirrelGame\bin\Debug\netcoreapp3.1\SquirrelGame.runtimeconfig.dev.json
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek4\SquirrelGame\bin\Debug\netcoreapp3.1\SquirrelGame.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek4\SquirrelGame\bin\Debug\netcoreapp3.1\SquirrelGame.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek4\SquirrelGame\obj\Debug\netcoreapp3.1\SquirrelGame.csprojAssemblyReference.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek4\SquirrelGame\obj\Debug\netcoreapp3.1\SquirrelGame.AssemblyInfoInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek4\SquirrelGame\obj\Debug\netcoreapp3.1\SquirrelGame.AssemblyInfo.cs
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek4\SquirrelGame\obj\Debug\netcoreapp3.1\SquirrelGame.csproj.CoreCompileInputs.cache
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek4\SquirrelGame\obj\Debug\netcoreapp3.1\SquirrelGame.dll
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek4\SquirrelGame\obj\Debug\netcoreapp3.1\SquirrelGame.pdb
+C:\Users\Johny\Documents\GitHub\Johny-SD1A-Repo\5 Periode 5\Programming\AssignmentsWeek4\SquirrelGame\obj\Debug\netcoreapp3.1\SquirrelGame.genruntimeconfig.cache
