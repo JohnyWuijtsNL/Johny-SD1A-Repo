@@ -5,29 +5,56 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    //list of states the game moves between
     [SerializeField]
     GameObject[] states;
-    int currentState;
-    TextMeshProUGUI error;
 
-    GameObject spinner;
-    GameObject choose;
-    TextMeshProUGUI spinText;
-    TextMeshProUGUI startSpinText;
-    TextMeshProUGUI nextText;
-    TextMeshProUGUI nextText2;
-    GameObject nextButton;
-    GameObject nextButton2;
     [SerializeField]
     GameObject board;
+    //target transform for the game board
     Quaternion targetRotation = Quaternion.Euler(0, 0, 0);
     Vector3 targetPosition = new Vector3(5.4f, 5.4f, 0);
     Vector3 targetScale = new Vector3(0.3f, 0.3f, 0);
 
+    //variable that tracks which state the game is currently in
+    int currentState;
+    int currentSection;
+    bool gameEnded = false;
+    //tracks which sections are already chosen
+    bool[] chosenSections = new bool[4];
+
+    //spinner itself
+    [SerializeField]
+    GameObject spinner;
+    //the game object that surrounds the spinner
+    //this object actually rotates, while the spinner plays an animation that always leaves it at the location it started in
+    [SerializeField]
+    GameObject choose;
+
+    [SerializeField]
+    TextMeshProUGUI error;
+    [SerializeField]
+    TextMeshProUGUI spinText;
+    [SerializeField]
+    TextMeshProUGUI startSpinText;
+    [SerializeField]
+    TextMeshProUGUI nextText;
+    [SerializeField]
+    TextMeshProUGUI nextText2;
+    [SerializeField]
+    TextMeshProUGUI cardText;
+    [SerializeField]
+    GameObject nextButton;
+    [SerializeField]
+    GameObject nextButton2;
+
+    //empty card that moves
     [SerializeField]
     GameObject realCard;
+    //sprite on the card, that changes throughout the game
     [SerializeField]
     SpriteRenderer anything;
+    //lists of all the sprites for the card
     [SerializeField]
     Sprite[] backsides;
     [SerializeField]
@@ -40,42 +67,41 @@ public class GameManager : MonoBehaviour
     Sprite[] grow;
     [SerializeField]
     Sprite[] escape;
-    bool cardGrabbed = false;
-    bool cardTurned = false;
-    bool cardGenerated = false;
-    bool cardAppeared = false;
-    bool grabInPlace;
-    bool isEscape = false;
-    float cardTimer;
-    int chosenCard;
-    TextMeshProUGUI cardText;
-    bool gameEnded = false;
 
+    //list of bools to track the state of the card
+    //is a card currently being grabbed from the deck
+    bool cardGrabbed = false;
+    //has the card turned to the point that its front side is showing
+    bool cardTurned = false;
+    //has the front side of the card generated
+    bool cardGenerated = false;
+    //has the card finished al its animations
+    bool cardAppeared = false;
+    //is the card already in the correct position when grabbing (skip grab animation and go straight to turning)
+    bool grabInPlace = false;
+    //is the card an escape card
+    bool isEscape = false;
+    //timer to time the card animation
+    float cardTimer;
+
+    int chosenCard;
+
+
+    //track which pawns are already on the board, to determine wether or not the user can go to the next state
     bool[] activePawns = new bool[4];
     bool isReady;
 
-    int currentSection;
-    bool[] chosenSections = new bool[4];
 
     void Start()
     {
-        error = GameObject.Find("Error").GetComponent<TextMeshProUGUI>();
-        spinner = GameObject.Find("spinner");
-        choose = GameObject.Find("choose");
-        spinText = GameObject.Find("spin text").GetComponent<TextMeshProUGUI>();
-        startSpinText = GameObject.Find("startSpinText").GetComponent<TextMeshProUGUI>();
-        nextText = GameObject.Find("NextText").GetComponent<TextMeshProUGUI>();
-        nextText2 = GameObject.Find("NextText2").GetComponent<TextMeshProUGUI>();
-        nextButton = GameObject.Find("nextButton");
-        nextButton2 = GameObject.Find("nextButton2");
-        nextButton2.SetActive(false);
-        cardText = GameObject.Find("cardText").GetComponent<TextMeshProUGUI>();
+        //choose a random section and set the starting state to state 0
         currentSection = Random.Range(0, 4);
         SetActiveState(0);
     }
 
     void Update()
     {
+        //move/rotate/scale the board smoothly to its target transform
         board.transform.rotation = Quaternion.RotateTowards(board.transform.rotation, targetRotation, 360 * Time.deltaTime);
         board.transform.position = Vector3.Lerp(board.transform.position, targetPosition, 5 * Time.deltaTime);
         board.transform.localScale = Vector3.Lerp(board.transform.localScale, targetScale, 5 * Time.deltaTime);
@@ -99,16 +125,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //called whenever a sliders position is changed
     public void SetPawnActive(int pawnNumber)
     {
         activePawns[pawnNumber] = true;
         error.text = "";
     }
 
+    //called whenever the "Next" button is pressed
     public void Next()
     {
+        //determine what the button should do, based on which state the player is in
         switch (currentState)
         {
+            //for state 0 and 1, go to the next state if all pawns are on the board, otherwise, display an error message
             case 0: case 1:
                 isReady = true;
                 foreach (bool activePawn in activePawns)
@@ -134,14 +164,18 @@ public class GameManager : MonoBehaviour
                     error.text = "Nog niet alle posities zijn gekozen!";
                 }
                 break;
+            //for state 3, start the spinning sequence in state 4 and move to it
             case 3:
+                //also sets the spin text to something else, for next time this state appears
                 startSpinText.text = "Draai aan het wiel om jullie volgende onderdeel te bepalen!";
                 StartCoroutine(WaitForSpin());
                 SetActiveState(4);
                 spinner.GetComponent<Animator>().SetTrigger("startSpin");
                 ChooseSection();
                 break;
+            //for case 5, either grab a card, remove the card on screen, or change the mirror or joker card into a different card
             case 5:
+                //if there is no card on screen, start the card grab animation
                 if (!cardAppeared)
                 {
                     nextButton.SetActive(false);
@@ -152,19 +186,25 @@ public class GameManager : MonoBehaviour
                     cardGrabbed = true;
                     cardTimer = 1;
                 }
+                //if there is a card on screen...
                 else
                 {
+                    //...make the user able to go to the next section
                     nextButton2.SetActive(true);
+
+                    //if the card on screen is a joker card, change it into an escape card
                     if (chosenCard < 2)
                     {
                         cardText.text = "Werknemer, beantwoord de vraag.";
                         grabInPlace = true;
                     }
+                    //if it is a mirror card, change it into a regular card
                     else if (chosenCard < 4)
                     {
                         cardText.text = "Werkgever, beantwoord de vraag.";
                         grabInPlace = true;
                     }
+                    //else, ask the user to grab another card, and stop them from being able to go to the next section
                     else
                     {
                         cardText.text = "Pak een kaart van de stapel.";
@@ -173,8 +213,8 @@ public class GameManager : MonoBehaviour
                         nextButton2.SetActive(false);
                     }
                 }
-
                 break;
+            //for all other states, simply move to the next state
             default:
                 SetActiveState(currentState + 1);
                 break;
@@ -182,6 +222,7 @@ public class GameManager : MonoBehaviour
 
     }
 
+    //disable all states, enable the state that is given and set it as the active one
     public void SetActiveState(int activeState)
     {
         foreach (GameObject state in states)
@@ -191,6 +232,8 @@ public class GameManager : MonoBehaviour
         states[activeState].SetActive(true);
         error.text = "";
         currentState = activeState;
+
+        //change the "Next" button text based on which state it is in
         if (activeState == 3)
         {
             nextText.text = "Draai";
@@ -201,6 +244,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //choose a random section that is not yet chosen, and if there is only one section left, change the functionality of the second button so it will end the game
     public void ChooseSection()
     {
         while (chosenSections[currentSection] && !gameEnded)
@@ -223,6 +267,7 @@ public class GameManager : MonoBehaviour
         choose.transform.eulerAngles = new Vector3(0, 0, Random.Range(1, 90) - 90 * currentSection);
     }
 
+    //wait until the spinning animation has finished, then tell the user which section is chosen, and change the target transform of the board
     IEnumerator WaitForSpin()
     {
         nextButton.SetActive(false);
@@ -254,6 +299,7 @@ public class GameManager : MonoBehaviour
         targetScale = new Vector3(0.6f, 0.6f, 0);
     }
 
+    //grabbing animation, including generating the front side
     void GrabCard()
     {
         if (cardAppeared)
@@ -319,6 +365,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //same as GrabCard(), except the animation for grabbing the card is skipped and it goes into turning the card immediately
     void GrabCardInPlace()
     {
         if (!cardTurned)
@@ -344,6 +391,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //generate a random front side, corresponding to the correct section, including grabbing an escape card if the previous card was a joker card
     void GenerateCard(bool isInPlace)
     {
         if (cardGenerated)
@@ -386,12 +434,16 @@ public class GameManager : MonoBehaviour
         cardGenerated = true;
     }
 
+    //reset the position of the card so it can be grabbed again
     void ResetCardPosition()
     {
         realCard.transform.position = new Vector3(3.96f, 2.58f, 0);
         realCard.transform.eulerAngles = new Vector3(0, 0, 33.5f);
     }
 
+    //change the state back to the spinner so the user can go to a new section
+    //if all sections are chosen already, ends the game instead
+    //called whenever the second button is pressed
     public void NextPart()
     {
         if (gameEnded)

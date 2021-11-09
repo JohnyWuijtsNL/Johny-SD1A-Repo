@@ -2027,7 +2027,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1120324451}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -3471,6 +3471,16 @@ MonoBehaviour:
   - {fileID: 573538317}
   - {fileID: 130289980}
   board: {fileID: 1119780695}
+  spinner: {fileID: 1063902119}
+  choose: {fileID: 1901193213}
+  error: {fileID: 1542776460}
+  spinText: {fileID: 2009971452}
+  startSpinText: {fileID: 1025429586}
+  nextText: {fileID: 1788280174}
+  nextText2: {fileID: 757364562}
+  cardText: {fileID: 2131937832}
+  nextButton: {fileID: 1444262674}
+  nextButton2: {fileID: 1071861975}
   realCard: {fileID: 2520564}
   anything: {fileID: 1490696609}
   backsides:
