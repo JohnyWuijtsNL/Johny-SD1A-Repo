@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public class Weather
 {
     string _cityName;
@@ -10,11 +6,14 @@ public class Weather
     public float SunPower { get { return _sunPower; } }
     int _rain;
     public int Rain { get { return _rain; } }
+    float _temperature;
+    public float Temperature { get { return _temperature; } }
 
-    public Weather(string cityName, float sunPower, int rain)
+    public Weather(string cityName, float sunPower, int rain, float temperature)
     {
         _cityName = cityName;
         _sunPower = sunPower;
         _rain = rain;
+        _temperature = temperature;
     }
 }
