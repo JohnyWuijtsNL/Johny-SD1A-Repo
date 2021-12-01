@@ -36,9 +36,9 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     GameObject doorTestSprite;
     [SerializeField]
-    GameObject playerTestSprite;
+    GameObject playerSprite;
     [SerializeField]
-    GameObject monsterTestSprite;
+    GameObject monsterSprite;
     [SerializeField]
     GameObject trapTestSprite;
 
@@ -57,7 +57,7 @@ public class LevelManager : MonoBehaviour
     //variables for tracking player and monsters position and rotation
     [SerializeField]
     GameObject player;
-    GameObject playerSprite;
+    GameObject playerAppearance;
     int playerY;
     int playerX;
     [SerializeField]
@@ -79,7 +79,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         //set offset to make the level appear in the center of the screen
-        offset = new Vector3(10.1f - (level1[0].Length * tileSize / 2), -5.9f + (level1.Length * tileSize / 2), 0);
+        offset = new Vector3(10.1f - (13 * tileSize / 2), -5.9f + (10 * tileSize / 2), 0);
 
         //convert level layout to layers
         layer1 = ConvertLayer1(level1);
@@ -218,39 +218,39 @@ public class LevelManager : MonoBehaviour
                         player.transform.position = new Vector3(x * tileSize, -y * tileSize) + offset;
                         playerX = x;
                         playerY = y;
-                        if (playerSprite == null)
+                        if (playerAppearance == null)
                         {
-                            playerSprite = Instantiate(playerTestSprite, new Vector3(x * tileSize, -y * tileSize) + offset, Quaternion.identity);
+                            playerAppearance = Instantiate(playerSprite, new Vector3(x * tileSize, -y * tileSize) + offset, Quaternion.identity);
                             if (playerRotationX == -1)
                             {
-                                playerSprite.transform.eulerAngles = new Vector3(0, 0, 90);
+                                playerAppearance.transform.eulerAngles = new Vector3(0, 0, 90);
                             }
                             else if (playerRotationX == 1)
                             {
-                                playerSprite.transform.eulerAngles = new Vector3(0, 0, -90);
+                                playerAppearance.transform.eulerAngles = new Vector3(0, 0, -90);
                             }
                             else if (playerRotationY == 1)
                             {
-                                playerSprite.transform.eulerAngles = new Vector3(0, 0, 180);
+                                playerAppearance.transform.eulerAngles = new Vector3(0, 0, 180);
                             }
                         }
                         break;
                     case "monster":
                         monsters.Add(Instantiate(monster, new Vector3(x * tileSize, -y * tileSize) + offset, Quaternion.identity));
-                        monsterSprites.Add(Instantiate(monsterTestSprite, new Vector3(x * tileSize, -y * tileSize) + offset, Quaternion.identity));
+                        monsterSprites.Add(Instantiate(monsterSprite, new Vector3(x * tileSize, -y * tileSize) + offset, Quaternion.identity));
                         monstersX.Add(x);
                         monstersY.Add(y);
                         if (monsterRotationsX[monsterSprites.Count - 1] == -1)
                         {
-                            monsterSprites[monsterSprites.Count - 1].transform.eulerAngles = new Vector3(0, 0, 180);
+                            monsterSprites[monsterSprites.Count - 1].transform.eulerAngles = new Vector3(0, 0, 90);
                         }
-                        else if (monsterRotationsY[monsterSprites.Count - 1] == 1)
+                        else if (monsterRotationsX[monsterSprites.Count - 1] == 1)
                         {
                             monsterSprites[monsterSprites.Count - 1].transform.eulerAngles = new Vector3(0, 0, -90);
                         }
-                        else if (monsterRotationsY[monsterSprites.Count - 1] == -1)
+                        else if (monsterRotationsY[monsterSprites.Count - 1] == 1)
                         {
-                            monsterSprites[monsterSprites.Count - 1].transform.eulerAngles = new Vector3(0, 0, 90);
+                            monsterSprites[monsterSprites.Count - 1].transform.eulerAngles = new Vector3(0, 0, 180);
                         }
                         break;
                     default:
@@ -267,7 +267,7 @@ public class LevelManager : MonoBehaviour
         {
             monsterSprites[i].transform.position += (monsters[i].transform.position - monsterSprites[i].transform.position) * moveSpeed;
         }
-        playerSprite.transform.position += (player.transform.position - playerSprite.transform.position) * moveSpeed;
+        playerAppearance.transform.position += (player.transform.position - playerAppearance.transform.position) * moveSpeed;
     }
 
     void Move()
@@ -310,11 +310,11 @@ public class LevelManager : MonoBehaviour
     {
         if (isLeft)
         {
-            playerSprite.transform.eulerAngles += new Vector3(0, 0, 90);
+            playerAppearance.transform.eulerAngles += new Vector3(0, 0, 90);
         }
         else
         {
-            playerSprite.transform.eulerAngles += new Vector3(0, 0, -90);
+            playerAppearance.transform.eulerAngles += new Vector3(0, 0, -90);
         }
 
         if (playerRotationX == 1)

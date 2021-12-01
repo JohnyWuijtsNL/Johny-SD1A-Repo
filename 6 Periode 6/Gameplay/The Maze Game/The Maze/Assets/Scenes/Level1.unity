@@ -180,7 +180,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: ed8a9bb5033489e4ba28649230b1ddde, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f36cebd7a22a95c4e9dc3b291da09036, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -402,8 +402,8 @@ MonoBehaviour:
   floorTestSprite: {fileID: 7577590825695649184, guid: 5a2076b44f9afb74fa088aec7c199dc0, type: 3}
   wallTestSprite: {fileID: 2226126955926992724, guid: b3a3820a858f1b041994326ec41a8e06, type: 3}
   doorTestSprite: {fileID: 5819438770776713401, guid: 508591455a818df4691f057e85ae0be9, type: 3}
-  playerTestSprite: {fileID: 3737507215914497309, guid: 505ede99c11dc6d49addf276d64bf8b1, type: 3}
-  monsterTestSprite: {fileID: 5693354967872812930, guid: b23c2dd8e113e5f4cbc94ed1583acac6, type: 3}
+  playerSprite: {fileID: 3737507215914497309, guid: 505ede99c11dc6d49addf276d64bf8b1, type: 3}
+  monsterSprite: {fileID: 3737507215914497309, guid: 4268afe44c3927d4db712ebd72251f00, type: 3}
   trapTestSprite: {fileID: 6153977431778403079, guid: bebd3d5435ae21b4d9fc7625964726d5, type: 3}
   monster: {fileID: 3692347872588662144, guid: a1256cb1c29ce2e4da9936a01fda32d4, type: 3}
   player: {fileID: 8177203121322633291, guid: 62d1a3e1b326144478ecd18387af65ea, type: 3}
@@ -482,12 +482,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: bf3092ddb2622304088a809c866a595d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 657c02dd4078a9d4eb2e247966d7bb96, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 21.9, y: 12.500537}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
