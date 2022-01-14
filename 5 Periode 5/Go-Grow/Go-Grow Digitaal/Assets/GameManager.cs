@@ -10,6 +10,14 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     GameObject[] states;
 
+    //player names
+    string player1 = "Speler 1";
+    string player2 = "Speler 2";
+    [SerializeField]
+    TMP_InputField player1Field;
+    [SerializeField]
+    TMP_InputField player2Field;
+
     [SerializeField]
     GameObject board;
     //target transform for the game board
@@ -27,13 +35,13 @@ public class GameManager : MonoBehaviour
     //array of dialogues
     string[] dialogues = { 
         //0 ask player 2 to pick positions
-        "Werknemer, kies uw positie voor elk van de onderdelen:",
+        ", kies je positie voor elk van de onderdelen:",
         //1 next button
         "Volgende",
         //2 tell player that not all positions have been chosen yet
         "Nog niet alle posities zijn gekozen!",
         //3 ask player 1 to pick positions
-        "Werkgever, kies uw positie voor elk van de onderdelen:",
+        ", kies je positie voor elk van de onderdelen:",
         //4 ask players to discuss their coices
         "Bespreek waarom jullie voor deze posities hebben gekozen.",
         //5 ask player to spin the wheel to choose the starting section
@@ -51,15 +59,15 @@ public class GameManager : MonoBehaviour
         //11 ask player to grab a card
         "Pak een kaart van de stapel.",
         //12 explanation of joker card
-        "Je hebt een joker kaart getrokken, dit betekend dat je een escape kaart mag trekken.",
+        "Je hebt een joker kaart getrokken, dit betekent dat je een escape kaart mag trekken.",
         //13 explanation for mirror card
-        "Je hebt een spiegelkaart getrokken, dit betekend dat de volgende vraag beantwoord wordt door de werkgever.",
+        "Je hebt een spiegelkaart getrokken, dit betekent dat de volgende vraag beantwoord wordt door de werkgever.",
         //14 ask player 2 to answer the question
-        "Werknemer, beantwoord de vraag.",
+        ", beantwoord de vraag.",
         //15 next section button
         "Volgend onderdeel",
         //16 ask player 1 to answer the question
-        "Werkgever, beantwoord de vraag.",
+        ", beantwoord de vraag.",
         //17 ask player to spin the wheel again to choose the next section
         "Draai aan het wiel om jullie volgende onderdeel te bepalen!",
         //18 finish game button
@@ -69,7 +77,7 @@ public class GameManager : MonoBehaviour
         //20 tell players the deck has ran out of cards
         "Er zijn helaas geen kaarten meer voor dit onderdeel.",
         //21 grab card button
-        "Pak een kaart."
+        "Pak kaart",
     };
 
     //spinner itself
@@ -156,9 +164,8 @@ public class GameManager : MonoBehaviour
     {
         //choose a random section and set the starting state to state 0
         currentSection = Random.Range(0, 4);
-        SetActiveState(0);
+        SetActiveState(7);
         nextButton2.SetActive(false);
-        dialogue.text = dialogues[0];
         nextText.text = dialogues[1];
         nextText2.text = dialogues[15];
     }
@@ -179,13 +186,26 @@ public class GameManager : MonoBehaviour
             GrabCardInPlace();
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene(0);
-        }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
+        }
+
+        //change the "Next" button text based on which state it is in
+        if (currentState == 3)
+        {
+            nextText.text = dialogues[6];
+        }
+        else
+        {
+            if (!cardAppeared && currentState == 5)
+            {
+                nextText.text = dialogues[21];
+            }
+            else
+            {
+                nextText.text = dialogues[1];
+            }
         }
     }
 
@@ -217,7 +237,7 @@ public class GameManager : MonoBehaviour
                 {
                     if (currentState == 0)
                     {
-                        dialogue.text = dialogues[3];
+                        dialogue.text = player1 + dialogues[3];
                     }
                     else
                     {
@@ -267,14 +287,14 @@ public class GameManager : MonoBehaviour
                         if (isJoker)
                         {
                             nextButton2.SetActive(true);
-                            dialogue.text = dialogues[14];
+                            dialogue.text = player2 + dialogues[14];
                             grabInPlace = true;
                         }
                         //if it is a mirror card, change it into a regular card
                         else if (isMirror)
                         {
                             nextButton2.SetActive(true);
-                            dialogue.text = dialogues[16];
+                            dialogue.text = player1+ dialogues[16];
                             grabInPlace = true;
                         }
                         //else, ask the user to grab another card, and stop them from being able to go to the next section
@@ -294,6 +314,19 @@ public class GameManager : MonoBehaviour
                     nextButton2.SetActive(true);
                 }
                 break;
+            case 7:
+                if (player1Field.text != "" && player2Field.text != "")
+                {
+                    SetActiveState(0);
+                    player1 = player1Field.text;
+                    player2 = player2Field.text;
+                    dialogue.text = player2 + dialogues[0];
+                }
+                else
+                {
+                    error.text = "Er is nog geen naam ingevoerd voor elk van de spelers!";
+                }
+                break;
             //for all other states, simply move to the next state
             default:
                 if (currentState == 2)
@@ -307,7 +340,6 @@ public class GameManager : MonoBehaviour
                 SetActiveState(currentState + 1);
                 break;
         }
-
     }
 
     //disable all states, enable the state that is given and set it as the active one
@@ -320,16 +352,6 @@ public class GameManager : MonoBehaviour
         states[activeState].SetActive(true);
         error.text = "";
         currentState = activeState;
-
-        //change the "Next" button text based on which state it is in
-        if (activeState == 3)
-        {
-            nextText.text = dialogues[6];
-        }
-        else
-        {
-            nextText.text = dialogues[1];
-        }
     }
 
     //choose a random section that is not yet chosen, and if there is only one section left, change the functionality of the second button so it will end the game
@@ -444,7 +466,7 @@ public class GameManager : MonoBehaviour
                 }
                 else
                 {
-                    dialogue.text = dialogues[14];
+                    dialogue.text = player2 + dialogues[14];
                     nextButton2.SetActive(true);
                 }
                 cardAppeared = true;
@@ -654,5 +676,10 @@ public class GameManager : MonoBehaviour
         cardAppeared = false;
         chosenCard = 100;
 
+    }
+
+    public void ValueChanged()
+    {
+        error.text = "";
     }
 }
