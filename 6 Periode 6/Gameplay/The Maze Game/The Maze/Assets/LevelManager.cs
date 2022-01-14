@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class LevelManager : MonoBehaviour
 {
@@ -18,14 +19,14 @@ public class LevelManager : MonoBehaviour
         "XXXXXXXXXXXXX" };
     string[] level1 = {
         "XXXXXXDXXXXXX",
-        "XP      X   X",
+        "X       X M X",
         "X       X   X",
         "X  X      T X",
-        "X  X        X",
+        "X  X  P     X",
         "X  X     X  X",
         "X XXXX   XXXX",
         "X  X    TX  X",
-        "X  X        X",
+        "XM X        X",
         "XXXXXXXXXXXXX" };
 
     //sprite variables for testing levels
@@ -73,8 +74,28 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     int[] monsterRotationsX;
 
+
+    Animator playerAnimator;
+    float moveDelay = 0.4f;
+    float moveTimer = 0;
+    bool walksLeft = false;
+    [SerializeField]
+    GameObject death;
+    [SerializeField]
+    GameObject explosion;
+
+    //audio
+    [SerializeField]
+    AudioSource audioSource;
+    [SerializeField]
+    AudioClip step;
+    [SerializeField]
+    AudioClip[] explosionSounds;
+    [SerializeField]
+    AudioClip playerDeath;
+
     //variable for how fast sprites move
-    float moveSpeed = 0.01f;
+    float moveSpeed = 7f;
 
     void Start()
     {
@@ -95,8 +116,47 @@ public class LevelManager : MonoBehaviour
     private void Update()
     {
         //move sprites towards their target positions
-        MoveSprites();
-        Move();
+        
+
+
+
+        if (playerAppearance != null && monsterSprites[0] != null)
+        {
+            if (layer2[3][10] != "empty" && layer2[7][8] != "empty" && moveTimer < 0)
+            {
+                audioSource.PlayOneShot(explosionSounds[Random.Range(0, 2)]);
+                if (layer2[3][10] == "player" || layer2[7][8] == "player")
+                {
+                    GameObject temp = Instantiate(death, playerAppearance.transform.position, playerAppearance.transform.rotation);
+                    Instantiate(explosion, playerAppearance.transform.position, playerAppearance.transform.rotation);
+                    temp.GetComponent<Animator>().SetTrigger("die");
+                    temp.GetComponent<Animator>().SetInteger("deathType", 0);
+                    Destroy(playerAppearance);
+                    audioSource.PlayOneShot(playerDeath);
+                }
+                if (layer2[3][10] == "monster1" || layer2[7][8] == "monster1")
+                {
+                    GameObject temp = Instantiate(death, monsterSprites[0].transform.position, monsterSprites[0].transform.rotation);
+                    Instantiate(explosion, monsterSprites[0].transform.position, monsterSprites[0].transform.rotation);
+                    temp.GetComponent<Animator>().SetTrigger("die");
+                    temp.GetComponent<Animator>().SetInteger("deathType", 1);
+                    Destroy(monsterSprites[0]);
+                }
+                if (layer2[3][10] == "monster2" || layer2[7][8] == "monster2")
+                {
+                    GameObject temp = Instantiate(death, monsterSprites[1].transform.position, monsterSprites[1].transform.rotation);
+                    Instantiate(explosion, monsterSprites[1].transform.position, monsterSprites[1].transform.rotation);
+                    temp.GetComponent<Animator>().SetTrigger("die");
+                    temp.GetComponent<Animator>().SetInteger("deathType", 1);
+                    Destroy(monsterSprites[1]);
+                }
+            }
+            MoveSprites();
+            Move();
+        }
+        
+
+        moveTimer -= Time.deltaTime;
     }
 
     //converts walls, floor, doors and traps into a layer
@@ -155,10 +215,12 @@ public class LevelManager : MonoBehaviour
             int x = 0;
             foreach (char character in levelY)
             {
+                int monstercount = 1;
                 switch (character)
                 {
                     case 'M':
-                        grid[y][x] = "monster";
+                        grid[y][x] = "monster" + monstercount;
+                        monstercount++;
                         break;
                     case 'P':
                         grid[y][x] = "player";
@@ -221,6 +283,7 @@ public class LevelManager : MonoBehaviour
                         if (playerAppearance == null)
                         {
                             playerAppearance = Instantiate(playerSprite, new Vector3(x * tileSize, -y * tileSize) + offset, Quaternion.identity);
+                            playerAnimator = playerAppearance.GetComponent<Animator>();
                             if (playerRotationX == -1)
                             {
                                 playerAppearance.transform.eulerAngles = new Vector3(0, 0, 90);
@@ -235,7 +298,7 @@ public class LevelManager : MonoBehaviour
                             }
                         }
                         break;
-                    case "monster":
+                    case "monster1": case "monster2":
                         monsters.Add(Instantiate(monster, new Vector3(x * tileSize, -y * tileSize) + offset, Quaternion.identity));
                         monsterSprites.Add(Instantiate(monsterSprite, new Vector3(x * tileSize, -y * tileSize) + offset, Quaternion.identity));
                         monstersX.Add(x);
@@ -265,43 +328,55 @@ public class LevelManager : MonoBehaviour
     {
         for (int i = 0; i < monsterSprites.Count; i++)
         {
-            monsterSprites[i].transform.position += (monsters[i].transform.position - monsterSprites[i].transform.position) * moveSpeed;
+            monsterSprites[i].transform.position += (monsters[i].transform.position - monsterSprites[i].transform.position) * moveSpeed * Time.deltaTime;
         }
-        playerAppearance.transform.position += (player.transform.position - playerAppearance.transform.position) * moveSpeed;
+        playerAppearance.transform.position += (player.transform.position - playerAppearance.transform.position) * moveSpeed * Time.deltaTime;
     }
 
     void Move()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A) && moveTimer < 0)
         {
             Rotate(true);
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D) && moveTimer < 0)
         {
             Rotate(false);
         }
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) && moveTimer < 0)
         {
+            moveTimer = moveDelay;
             if (layer1[playerY + playerRotationY][playerX + playerRotationX] != "wall")
             { 
                 layer2[playerY][playerX] = "empty";
                 playerY += playerRotationY;
                 playerX += playerRotationX;
-                layer2[playerY][playerX] = "player";
+                
                 player.transform.position = new Vector3(playerX * tileSize, -playerY * tileSize) + offset;
-            }
-
-            for (int i = 0; i < monsters.Count; i++)
-            {
-                Debug.Log("test");
-                if (layer1[monstersY[i] + monsterRotationsY[i]][monstersX[i] + monsterRotationsX[i]] != "wall")
+                for (int i = 0; i < monsters.Count; i++)
                 {
-                    layer2[monstersY[i]][monstersX[i]] = "empty";
-                    monstersY[i] += monsterRotationsY[i];
-                    monstersX[i] += monsterRotationsX[i];
-                    layer2[playerY][playerX] = "monster";
-                    monsters[i].transform.position = new Vector3(monstersX[i] * tileSize, -monstersY[i] * tileSize) + offset;
+                    if (layer1[monstersY[i] + monsterRotationsY[i]][monstersX[i] + monsterRotationsX[i]] != "wall")
+                    {
+                        layer2[monstersY[i]][monstersX[i]] = "empty";
+                        monstersY[i] += monsterRotationsY[i];
+                        monstersX[i] += monsterRotationsX[i];
+                        layer2[monstersY[i]][monstersX[i]] = "monster" + (i + 1);
+                        monsters[i].transform.position = new Vector3(monstersX[i] * tileSize, -monstersY[i] * tileSize) + offset;
+                    }
                 }
+                layer2[playerY][playerX] = "player";
+                if (walksLeft)
+                {
+                    playerAnimator.SetInteger("walkDir", 0);
+                }
+                else
+                {
+                    playerAnimator.SetInteger("walkDir", 1);
+                }
+                walksLeft = !walksLeft;
+                playerAnimator.SetTrigger("walk");
+                audioSource.pitch = Random.Range(0.75f, 1f);
+                audioSource.PlayOneShot(step);
             }
         }
     }
