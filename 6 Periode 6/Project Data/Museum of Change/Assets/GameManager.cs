@@ -11,9 +11,8 @@ public class GameManager : MonoBehaviour
     Transform[] travelLocations;
 
     int currentRoom = 0;
-
-    // Update is called once per frame
-    void Update()
+    /*
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -22,13 +21,13 @@ public class GameManager : MonoBehaviour
             {
                 currentRoom = 0;
             }
-
             Teleport(currentRoom);
         }
     }
-
-    void Teleport(int room)
+    */
+    public void Teleport(int room)
     {
         VRArea.transform.position = travelLocations[room].position;
+        currentRoom = room;
     }
 }
