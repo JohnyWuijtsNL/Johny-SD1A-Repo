@@ -1,0 +1,379 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.26f1 (7298b473bc1a) revision 7510196'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Core' Language: 'en' Physical Memory: 16251 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Johny/Documents/GitHub/Johny-SD1A-Repo/6 Periode 6/Project Data/Museum of Change
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58998
+Successfully changed project path to: C:/Users/Johny/Documents/GitHub/Johny-SD1A-Repo/6 Periode 6/Project Data/Museum of Change
+C:/Users/Johny/Documents/GitHub/Johny-SD1A-Repo/6 Periode 6/Project Data/Museum of Change
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 44.63 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.26f1 (7298b473bc1a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Johny/Documents/GitHub/Johny-SD1A-Repo/6 Periode 6/Project Data/Museum of Change/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   30.0.14.9729
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56992
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001602 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 39.27 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.524 seconds
+Domain Reload Profiling:
+	ReloadAssembly (525ms)
+		BeginReloadAssembly (50ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (411ms)
+			LoadAssemblies (49ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (135ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (159ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (39ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (77ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004754 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.963 seconds
+Domain Reload Profiling:
+	ReloadAssembly (964ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (776ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (277ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (290ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (191ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.83 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1829 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.4 MB.
+System memory in use after: 82.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2261.
+Total: 3.126000 ms (FindLiveObjects: 0.141200 ms CreateObjectMapping: 0.057300 ms MarkObjects: 2.865900 ms  DeleteObjects: 0.060200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/button press.mp3
+  artifactKey: Guid(175fb10db6cf4fb4285ce6c1ed784ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/button press.mp3 using Guid(175fb10db6cf4fb4285ce6c1ed784ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '745fdea4e130cceff6e0581d803aa458') in 0.095648 seconds 
+  Import took 0.098435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/DefaultLightmapParameters.giparams
+  artifactKey: Guid(6b29554d5ae8b6c42afbeef01fca57ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DefaultLightmapParameters.giparams using Guid(6b29554d5ae8b6c42afbeef01fca57ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd94dac16a2f3f0b0e9ee5f718840862e') in 0.010155 seconds 
+  Import took 0.013042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/room ambience loop.wav
+  artifactKey: Guid(cc823099082cb7f45b2595db326eb24b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/room ambience loop.wav using Guid(cc823099082cb7f45b2595db326eb24b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aa273a195b152492ece0d2c7f8e1d53') in 0.016640 seconds 
+  Import took 0.019171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 198.108972 seconds.
+  path: Assets/dialogue
+  artifactKey: Guid(2807022373d86a244ab9a730240d9261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue using Guid(2807022373d86a244ab9a730240d9261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77726907d5c17381f2dd7295a7f27533') in 0.008281 seconds 
+  Import took 0.011997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.059887 seconds.
+  path: Assets/dialogue/cobra groep audio.avi.mp3
+  artifactKey: Guid(43f2415aaadf88c4ea6ebd0eae12f778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/cobra groep audio.avi.mp3 using Guid(43f2415aaadf88c4ea6ebd0eae12f778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e672389e3054d94363b35c615adb5ea0') in 0.009669 seconds 
+  Import took 0.012669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/dialogue/paul cezanne_3.mp3
+  artifactKey: Guid(bd0bfa2d70eb4fe48a534a44862303c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/paul cezanne_3.mp3 using Guid(bd0bfa2d70eb4fe48a534a44862303c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21b1aa6552ff0cebea0644fa3fad72fc') in 0.012131 seconds 
+  Import took 0.014362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/dialogue/Paul Cezanne_5.mp3
+  artifactKey: Guid(333c7e7dccaabc94b919ca9e1de4f050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/Paul Cezanne_5.mp3 using Guid(333c7e7dccaabc94b919ca9e1de4f050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23a374aef928dbde3f5f41a3415c2069') in 0.011990 seconds 
+  Import took 0.014637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/dialogue/kadinsky audio.avi.mp3
+  artifactKey: Guid(96d4e482494c68a4e96baafd989ad2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/kadinsky audio.avi.mp3 using Guid(96d4e482494c68a4e96baafd989ad2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e458aa8bb466fb11ef90d28dcc70893a') in 0.011550 seconds 
+  Import took 0.014144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/dialogue/Paul Cezanne_2.mp3
+  artifactKey: Guid(c0d89ff084fb42645a501df458cb9006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/Paul Cezanne_2.mp3 using Guid(c0d89ff084fb42645a501df458cb9006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4ef21119a2080ce28bfada9bb64259f') in 0.010492 seconds 
+  Import took 0.013417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/dialogue/Georges Seurat_3.mp3
+  artifactKey: Guid(8165669c2ce289e47aea3e6ad8d0e80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/Georges Seurat_3.mp3 using Guid(8165669c2ce289e47aea3e6ad8d0e80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e993dc10407d6c77ac739d4948090ccd') in 0.011477 seconds 
+  Import took 0.014144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/dialogue/Paul Cezanne_1.mp3
+  artifactKey: Guid(28e328496afc5dd4f90577df3dc71d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/Paul Cezanne_1.mp3 using Guid(28e328496afc5dd4f90577df3dc71d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e8775c81d6a89ce8e8c03edb72033e') in 0.012461 seconds 
+  Import took 0.014857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/dialogue/Zdzisław Beksiński_2.mp3
+  artifactKey: Guid(669d23d0e3726dd40912199908920d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/Zdzisław Beksiński_2.mp3 using Guid(669d23d0e3726dd40912199908920d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b0f6a9b4a0a7f6ddd80fbee1dbeb603') in 0.010481 seconds 
+  Import took 0.013376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/dialogue/Georges Seurat_2.mp3
+  artifactKey: Guid(75382cfcb676b6142b8c4f8f96c9f239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/Georges Seurat_2.mp3 using Guid(75382cfcb676b6142b8c4f8f96c9f239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2374d506fcf33dffb1412980c06a96ea') in 0.010739 seconds 
+  Import took 0.013506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/dialogue/hilma af klint_7.mp3
+  artifactKey: Guid(91ea3314e6076a14e8060813480b799a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/hilma af klint_7.mp3 using Guid(91ea3314e6076a14e8060813480b799a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf11f71544ae3c788b3718a722151d0') in 0.012603 seconds 
+  Import took 0.015458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/dialogue/Paul Cezanne_4.mp3
+  artifactKey: Guid(add4f50d270c0584780e8b1e89cf309c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/Paul Cezanne_4.mp3 using Guid(add4f50d270c0584780e8b1e89cf309c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89fd6b4a5fbaccf20c8f1a41e47c4984') in 0.011956 seconds 
+  Import took 0.014519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/dialogue/hilma af klint_2.mp3
+  artifactKey: Guid(facd5db036d19584b8b95ed09353de9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/hilma af klint_2.mp3 using Guid(facd5db036d19584b8b95ed09353de9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '582ba46b4ef82a7bc1f07f8e0cb30f23') in 0.010629 seconds 
+  Import took 0.013777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/dialogue/prologe_3.mp3
+  artifactKey: Guid(0b07c5c79203f574d8826d988d5c78c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/prologe_3.mp3 using Guid(0b07c5c79203f574d8826d988d5c78c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fe168d0c7e53f08e823d9d43e825ff0') in 0.010724 seconds 
+  Import took 0.013409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/dialogue/jo bear audio.avi.mp3
+  artifactKey: Guid(d6e775df73e66c8488fb78bd04c1e03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/jo bear audio.avi.mp3 using Guid(d6e775df73e66c8488fb78bd04c1e03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '888508865fe44f681428ec691c5adc45') in 0.010934 seconds 
+  Import took 0.013840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/dialogue/prologe_2.mp3
+  artifactKey: Guid(e5e5a59b5b3424c4ab6287ab2ed4fae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/prologe_2.mp3 using Guid(e5e5a59b5b3424c4ab6287ab2ed4fae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48e8dab9c9ec10e1e7e694dfe2a05200') in 0.011928 seconds 
+  Import took 0.014627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/dialogue/hilma af klint_6.mp3
+  artifactKey: Guid(961b1a7cd07c5724eb02e5f45be3e774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/hilma af klint_6.mp3 using Guid(961b1a7cd07c5724eb02e5f45be3e774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19ad613c0ebeb3ce8e310fdc54053c19') in 0.011332 seconds 
+  Import took 0.013924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/dialogue/Zdzisław Beksińsk_5.mp3
+  artifactKey: Guid(64aee0e8bd33df0459548a46e6b6badc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/Zdzisław Beksińsk_5.mp3 using Guid(64aee0e8bd33df0459548a46e6b6badc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '270835a914a66710c40edf6338456c1a') in 0.011173 seconds 
+  Import took 0.013960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/dialogue/hilma af klint_5.mp3
+  artifactKey: Guid(ac37a9d33212e9148a83292a494384dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/hilma af klint_5.mp3 using Guid(ac37a9d33212e9148a83292a494384dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6b266626485ad8226e27793a565e369') in 0.011309 seconds 
+  Import took 0.013626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/dialogue/Zdzisław Beksiński_1.mp3
+  artifactKey: Guid(3c44adbac9ec4264c8b6b2ce4f9d86b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/Zdzisław Beksiński_1.mp3 using Guid(3c44adbac9ec4264c8b6b2ce4f9d86b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15e33ee68f1109ed0606d759ceab02a7') in 0.010731 seconds 
+  Import took 0.013416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/dialogue/Zdzisław Beksiński_3.mp3
+  artifactKey: Guid(250b55adb9fec1c4db5cdd3b706da79d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/Zdzisław Beksiński_3.mp3 using Guid(250b55adb9fec1c4db5cdd3b706da79d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09541689e3225e251b3e6046bf06949f') in 0.011141 seconds 
+  Import took 0.013761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/dialogue/Georges Seurat_1.mp3
+  artifactKey: Guid(1532843bda201ff4c84d2ac78576036f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/Georges Seurat_1.mp3 using Guid(1532843bda201ff4c84d2ac78576036f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a369c79a91bdcee825a32b2371b59298') in 0.012307 seconds 
+  Import took 0.015149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/dialogue/hilma af klint_4.mp3
+  artifactKey: Guid(ca505b42f0d5dcf419ebe2b7f3f4e8ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/hilma af klint_4.mp3 using Guid(ca505b42f0d5dcf419ebe2b7f3f4e8ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45064bac33e1838b773537efd0aa0c57') in 0.014254 seconds 
+  Import took 0.016796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/dialogue/kaws audio.avi.mp3
+  artifactKey: Guid(ea837ad6d6226e34fbaa6b1074211bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/kaws audio.avi.mp3 using Guid(ea837ad6d6226e34fbaa6b1074211bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd01348b069517595648b95ed22d1d54f') in 0.012488 seconds 
+  Import took 0.014811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/dialogue/Zdzisław Beksiński_4.mp3
+  artifactKey: Guid(41f3cf8d09690a1488590b5d7e825105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/Zdzisław Beksiński_4.mp3 using Guid(41f3cf8d09690a1488590b5d7e825105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa8c2314f0f04f8f68ecdf9eb9f3b9c4') in 0.013181 seconds 
+  Import took 0.015621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/dialogue/prologe_1.mp3
+  artifactKey: Guid(4486b86c1f1e41844b8e455dc46baa39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/prologe_1.mp3 using Guid(4486b86c1f1e41844b8e455dc46baa39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daa693e40251096956850af8a9e6b0d9') in 0.011452 seconds 
+  Import took 0.015077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/dialogue/hilma af klint_3.mp3
+  artifactKey: Guid(50fcfb37c7173ab43aa647e67a5c8be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/hilma af klint_3.mp3 using Guid(50fcfb37c7173ab43aa647e67a5c8be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3e9baf9e9ab166820401dfa47136861') in 0.011236 seconds 
+  Import took 0.014023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 91.070020 seconds.
+  path: Assets/dialogue/kadinsky audio mp3.mp3
+  artifactKey: Guid(46c070cbc93957240bf4e972efed6b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dialogue/kadinsky audio mp3.mp3 using Guid(46c070cbc93957240bf4e972efed6b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84fd9a794e99254fd2349f65754a7503') in 0.015957 seconds 
+  Import took 0.019358 seconds .
+
