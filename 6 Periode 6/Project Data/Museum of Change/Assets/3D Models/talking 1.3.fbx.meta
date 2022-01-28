@@ -87,7 +87,62 @@ ModelImporter:
   - first:
       74: 4210368573141843502
     second: happy face|PlaneAction.005
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: A
+    second: {fileID: 2100000, guid: 201cff3f1b8c10044852c71dc664a204, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: f07b19308e1f58042819c7543ec5d195, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 2ef8e34c53f72074d9462f5095968333, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: df51da2fe8298564da21c6089f2e3d1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: facefdb685bcdad43926a8d820bf1cb6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: b0e9f0570dd73ca468c253506552aa4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: a916b9829c0945d4688f7f0abef35c95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.009
+    second: {fileID: 2100000, guid: f03d8c136b668d44abc39d27e1956cf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.011
+    second: {fileID: 2100000, guid: 0ca8d08a16d928447954c10b8551b984, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bot big 0
+    second: {fileID: 2800000, guid: c06b3b0273d09ed47a167b6b30e9641a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bot smiley
+    second: {fileID: 2800000, guid: 8c14c235c3adb4b409353b56a079b915, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

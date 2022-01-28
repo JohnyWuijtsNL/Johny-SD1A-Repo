@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ButtonScript : MonoBehaviour
@@ -10,24 +8,50 @@ public class ButtonScript : MonoBehaviour
     [SerializeField]
     int buttonNumber;
 
-    float coolDown = 0;
-    float timer = 0.1f;
+    [SerializeField]
+    AudioSource audioSource;
 
-    // Update is called once per frame
+    [SerializeField]
+    AudioClip buttonPress;
+
+    bool isPressed = false;
+
+    [SerializeField]
+    GameObject[] otherButtons;
+
+    private void Start()
+    {
+        if (buttonNumber == 0)
+        {
+            foreach (GameObject otherButton in otherButtons)
+            {
+                otherButton.SetActive(false);
+            }
+        }
+    }
+
     void Update()
     {
-        coolDown -= Time.deltaTime;
-        if (transform.position.y > 1.22f)
+        if (transform.position.y > 0.93f)
         {
-            transform.position = new Vector3(transform.position.x, 1.22f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, 0.93f, transform.position.z);
+            isPressed = false;
         }
-        if (transform.position.y < 1.18f)
+        if (transform.position.y < 0.9f)
         {
-            transform.position = new Vector3(transform.position.x, 1.18f, transform.position.z);
-            if (coolDown <= 0)
+            transform.position = new Vector3(transform.position.x, 0.9f, transform.position.z);
+            if (!isPressed)
             {
                 gameManager.Teleport(buttonNumber);
-                coolDown = timer;
+                isPressed = true;
+                audioSource.PlayOneShot(buttonPress);
+                if (buttonNumber == 0)
+                {
+                    foreach (GameObject otherButton in otherButtons)
+                    {
+                        otherButton.SetActive(true);
+                    }
+                }
             }
         }
     }
