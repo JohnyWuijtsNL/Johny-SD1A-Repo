@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,7 +16,16 @@ public class GameManager : MonoBehaviour
     Material[] materials;
 
     public int currentRoom = -1;
-    
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Teleport(0);
+            SceneManager.LoadScene(0);
+        }
+    }
+
     public void Teleport(int room)
     {
         VRArea.transform.position = new Vector3(travelLocations[room].position.x, 0, travelLocations[room].position.z);
