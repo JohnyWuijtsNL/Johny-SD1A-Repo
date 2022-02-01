@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.museumofchange.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\63916\\Documents\\GitHub\\Johny-SD2A-Repo\\6 Periode 6\\Project Data\\Museum of Change\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "D:\\Documents\\GitHub\\Johny-SD2A-Repo\\6 Periode 6\\Project Data\\Museum of Change\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "Museum of Change [Testing]"
