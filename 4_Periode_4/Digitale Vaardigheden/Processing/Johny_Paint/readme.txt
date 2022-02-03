@@ -1,0 +1,1 @@
+Scrollen om grootte van kwast te wijzigen, nummers 0 - 9 gebruiken om de kleur van de kwast te wijzigen.
