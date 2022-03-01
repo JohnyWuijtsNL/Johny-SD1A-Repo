@@ -1,0 +1,9 @@
+HTML tags are pieces of text that indicate the beginning or end of an HTML element.
+
+HTML elements consist of a start tag, content, and an end tag. Some HTML elements don't have an end tag. These elements also can't have content.
+
+Variables reference to a value.
+
+Syntax is the structure of the code in a certain programming language.
+
+Assignment is changing the reference of a variable.
