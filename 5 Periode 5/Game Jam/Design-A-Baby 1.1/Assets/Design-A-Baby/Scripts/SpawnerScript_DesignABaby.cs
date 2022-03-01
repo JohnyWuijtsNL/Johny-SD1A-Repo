@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class SpawnerScript_DesignABaby : MonoBehaviour
 {
@@ -26,11 +27,28 @@ public class SpawnerScript_DesignABaby : MonoBehaviour
     [SerializeField]
     bool debug = false;
 
+    [SerializeField]
+    TextMeshProUGUI attemptsText, scoreText;
+    int attempts, score;
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         gameManager.StartGame(7, false, "Design-A-Baby!");
+
+        if (PlayerPrefs.HasKey("Attempts"))
+        {
+            attempts = PlayerPrefs.GetInt("Attempts");
+            score = PlayerPrefs.GetInt("Score");
+        }
+        else
+        {
+            attempts = 0;
+            score = 0;
+        }
+
+        UpdateScore();
     }
 
     void Update()
@@ -63,6 +81,7 @@ public class SpawnerScript_DesignABaby : MonoBehaviour
 
     public void EndGame(bool hasWon)
     {
+        attempts++;
         if (!hasWon)
         {
             gameManager.SetWon(false);
@@ -73,8 +92,12 @@ public class SpawnerScript_DesignABaby : MonoBehaviour
             PlaySound(2);
             particles.SetActive(true);
             gameManager.SetWon(true);
+            score++;
         }
         gameOver = true;
+        PlayerPrefs.SetInt("Attempts", attempts);
+        PlayerPrefs.SetInt("Score", score);
+        UpdateScore();
     }
 
     public void PlaySound(int sound)
@@ -95,5 +118,11 @@ public class SpawnerScript_DesignABaby : MonoBehaviour
                 audioSource.PlayOneShot(lost);
                 break;
         }
+    }
+
+    void UpdateScore()
+    {
+        attemptsText.text = "Attempts: " + attempts;
+        scoreText.text = "Babies created: " + score;
     }
 }
