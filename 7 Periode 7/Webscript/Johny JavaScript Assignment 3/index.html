@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Johny's Webshop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 400%;
+        }
+
+        .item,
+        .cart {
+
+            padding: 25px;
+            background-color: beige;
+            border: solid;
+            border-width: 3px;
+            border-color: burlywood;
+            border-radius: 25px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .item {
+            display: inline-block;
+            width: 250px;
+        }
+
+        .cart {
+            display: inline-block;
+            width: 400px;
+        }
+
+        button.buy {
+            padding: 25px;
+            width: 100%;
+            background-color: sandybrown;
+            border-radius: 10px;
+            color: brown;
+            font-size: 150%;
+        }
+
+        button.sbuy {
+            background-color: sandybrown;
+            border-radius: 10px;
+            color: brown;
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 100%;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        p {
+            margin: 5px;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body onload="initialize()">
+    <h1>Welcome to Johny's Webshop!</h1>
+    <div class="item">
+        <img src="img/rubikssandwich.jpg">
+        <p>Price: $3.50</p>
+        <p id="rubikstock"></p>
+        <button id="rubikbutton" onclick="buyItem('rubik')" class="buy">Buy a Rubik's Sandwich!</button>
+    </div>
+    <div class="item">
+        <img src="img/cowch.jpg">
+        <p>Price: $50</p>
+        <p id="cowchstock"></p>
+        <button id="cowchbutton" onclick="buyItem('cowch')" class="buy">Buy a cowch!</button>
+    </div>
+    <div class="item">
+        <img src="img/bagelseeds.png">
+        <p>Price: $0.15</p>
+        <p id="seedstock"></p>
+        <button id="seedbutton" onclick="buyItem('seed')" class="buy">Buy a bagel seed!</button>
+    </div>
+    <div class="item">
+        <img src="img/wazowskey.jpg">
+        <p>Price: $1500</p>
+        <p id="keystock"></p>
+        <button id="keybutton" onclick="buyItem('key')" class="buy">Buy the Mike Wazowskey!</button>
+    </div>
+    <br>
+    <div class="cart">
+        <p>Currently in cart:</p>
+        <p id="nothing">Nothing!</p>
+        <div id="rubikcart">
+            <p><span id="rubikbought"></span><button id="mrubikbutton" onclick="unbuyItem('rubik')"
+                class="sbuy">-</button><button id="srubikbutton" onclick="buyItem('rubik')" class="sbuy">+</button></p>
+            <br>
+        </div>
+        <div id="cowchcart">
+            <p><span id="cowchbought"></span><button id="mcowchbutton" onclick="unbuyItem('cowch')"
+                class="sbuy">-</button><button id="scowchbutton" onclick="buyItem('cowch')" class="sbuy">+</button></p>
+            <br>
+        </div>
+        <div id="seedcart">
+            <p><span id="seedbought"></span><button id="mseedbutton" onclick="unbuyItem('seed')"
+                class="sbuy">-</button><button id="sseedbutton" onclick="buyItem('seed')" class="sbuy">+</button></p>
+            <br>
+        </div>
+        <div id="keycart">
+            <p><span id="keybought"></span><button id="mkeybutton" onclick="unbuyItem('key')"
+                class="sbuy">-</button><button id="skeybutton" onclick="buyItem('key')" class="sbuy">+</button></p>
+            <br>
+        </div>
+        <div id="total">
+            <span id="totalnumber">Total: $0</span><button class="sbuy">Check out!</button>
+        </div>
+</body>
+
+</html>
