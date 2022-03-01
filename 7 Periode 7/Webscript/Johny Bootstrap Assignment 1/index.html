@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/bb1e0f634f.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <title>Tortilla Blankets</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        h1 {
+            font-family: 'Metal Mania', cursive;
+            font-size: 6vw;
+        }
+
+        h2 {
+            font-size: 3vw;
+        }
+
+        li,
+        p,
+        label,
+        input,
+        button {
+            font-size: 2vw;
+        }
+
+
+        button {
+            height: 5vw;
+            width: 15vw;
+        }
+
+        .green {
+            color: #00c000
+        }
+
+        .red {
+            color: #c00000
+        }
+
+        .orange {
+            color: orangered
+        }
+
+        .image {
+            width: 100px;
+            border: dotted 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-5">
+                <h1 class="text-center text-danger">Double Sided</h1>
+                <img src="images/double-sided.jpg" class="img-responsive">
+                <div class="well">
+                    <h2 class="text-center">Genuine Tortilla</h2>
+                    <ol class="green">
+                        <li>Super realistic</li>
+                        <li>Super funny</li>
+                        <li>Super cute</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <h1 class="text-center text-danger">VS</h1>
+            </div>
+            <div class="col-xs-5">
+                <h1 class="text-center text-danger">One Sided</h1>
+                <img src="images/one-sided.jpg" class="img-responsive">
+                <div class="well">
+                    <h2 class="text-center">Imitation Tortilla</h2>
+                    <ul class="red">
+                        <li>It is pretty lame that only one side is a tortilla</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row orange">
+            <div class="col-xs-6">
+                <p>Which tortilla blankets do you own?</p>
+                <input type="checkbox" name="double-sided">
+                <label for="one-sided">Double Sided</label>
+                <input type="checkbox" name="one-sided">
+                <label for="one-sided">One Sided</label>
+            </div>
+            <div class="col-xs-6">
+                <p>Which tortilla blanket do you prefer?</p>
+                <input type="radio" name="prefer" id="double">
+                <label for="double">Double Sided</label>
+                <input type="radio" name="prefer" id="one">
+                <label for="one">One Sided</label>
+                <p>Why?</p>
+                <input type="text" placeholder="Because...">
+                <button class="btn btn-default"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+            </div>
+        </div>
+        <h1 class="text-danger text-center">Thanks for filling in the form!</h1>
+        <h2 class="orange">original image:</h2>
+        <a href="images/original.jpg"><img src="images/original.jpg" class="image"></a>
+    </div>
+</body>
+
+</html>
