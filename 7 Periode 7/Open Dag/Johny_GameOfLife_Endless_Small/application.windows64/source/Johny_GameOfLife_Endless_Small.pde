@@ -1,5 +1,5 @@
 //change to change size of the squares
-int pixelSize = 8;
+int pixelSize = 10;
 //change to change time it takes for one frame
 int frameTime = 2;
 //change to change the rate at which colour change happens
@@ -7,8 +7,8 @@ int changeSpeed = 1;
 //change to change the length of the trail the squares leave behind
 int trail = 32;
 
-int screenX = round(1920 / pixelSize) + 2;
-int screenY = round(1080 / pixelSize) + 2;
+int screenX = round(2560 / pixelSize) + 2;
+int screenY = round(1440 / pixelSize) + 2;
 boolean[][] field = new boolean[screenX][];
 boolean[][] oldField = new boolean[screenX][];
 int xCord = 0;
