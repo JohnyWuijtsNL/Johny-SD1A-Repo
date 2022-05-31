@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.philipsmuseumgames.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "D:\\Documents\\GitHub\\Johny-SD2A-Repo\\8 Periode 8\\Philips\\Philips Museum Games\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Philips Museum Games [Testing]"
+        }
+      }
+    }
+  ]
+}
