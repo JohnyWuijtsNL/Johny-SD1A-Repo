@@ -7,13 +7,12 @@ int changeSpeed = 1;
 //change to change the length of the trail the squares leave behind
 int trail = 32;
 
-int screenX = round(1920 / pixelSize) + 2;
-int screenY = round(1080 / pixelSize) + 2;
+int screenX = round(1920 / pixelSize);
+int screenY = round(1080 / pixelSize);
 boolean[][] field = new boolean[screenX][];
 boolean[][] oldField = new boolean[screenX][];
 int xCord = 0;
 int yCord = 0;
-int neighbours = 0;
 int timer = 3;
 
 int redC = 255;
@@ -34,7 +33,7 @@ void generateField()
   {
     field[i] = new boolean[screenY];
     oldField[i] =  new boolean[screenY];
-    if (i == 0 || i == field.length -1)
+    if (i > (field.length - 1) / 2)
     {
       for (int j = 0; j < field[i].length; j++)
       {
@@ -45,17 +44,9 @@ void generateField()
     {
       for (int j = 0; j < field[i].length; j++)
       {
-        if (j == 0 || j == field[i].length - 1)
-        {
-          field[i][j] = false;
-        }
-        else
-        {
-          field[i][j] = random(1) > 0.85;
-        }
+        field[i][j] = true;
       }
     }
-    
   }
 }
 
@@ -110,55 +101,69 @@ void draw()
          oldField[i][j] = field[i][j];
        }
     }
-    for (int i = 1; i < field.length - 1; i++)
+    for (int i = 0; i < field.length; i++)
     {
-      for (int j = 1; j < field[i].length - 1; j++)
+      for (int j = 0; j < field[i].length; j++)
       {
-        neighbours = 0;
-        if (oldField[i-1][j-1]) { neighbours++; }
-        if (oldField[i][j-1]) { neighbours++; }
-        if (oldField[i+1][j-1]) { neighbours++; }
-        if (oldField[i-1][j]) { neighbours++; }
-        if (oldField[i+1][j]) { neighbours++; }
-        if (oldField[i-1][j+1]) { neighbours++; }
-        if (oldField[i][j+1]) { neighbours++; }
-        if (oldField[i+1][j+1]) { neighbours++; }
-      
-        if (neighbours < 2) { field[i][j] = false; }
-        if (neighbours == 3) { field[i][j] = true; }
-        if (neighbours > 3) { field[i][j] = false; }
+        int team1 = 0;
+        int team2 = 0;
+        int minusI = i, maxI = i, minusJ = j, maxJ = j;
+        
+        if (i == 0)
+        {
+          minusI = field.length;
+        }
+        if (i == field.length - 1)
+        {
+          maxI = -1;
+        }
+        if (j == 0)
+        {
+          minusJ = field[i].length;
+        }
+        if (j == field[i].length - 1)
+        {
+          maxJ = -1;
+        }
+        
+        if (oldField[minusI-1][minusJ-1]) { team1++; } else { team2++; }
+        if (oldField[minusI-1][j]) { team1++; } else { team2++; }
+        if (oldField[minusI-1][maxJ+1]) { team1++; } else { team2++; }
+        if (oldField[i][minusJ-1]) { team1++; } else { team2++; }
+        if (oldField[i][j]) { team1++; } else { team2++; }
+        if (oldField[i][maxJ+1]) { team1++; } else { team2++; }
+        if (oldField[maxI+1][minusJ-1]) { team1++; } else { team2++; }
+        if (oldField[maxI+1][j]) { team1++; } else { team2++; }
+        if (oldField[maxI+1][maxJ+1]) { team1++; } else { team2++; }
+        
+       
+        
+        
+        float ratio = 1 / (float(team1) + float(team2)) * float(team1);
+        if (ratio > random(1)) { field[i][j] = true; } else { field[i][j] = false; }
       }
     }
     
     generateColour();
-    fill(0, 0, 0, trail);
+    fill(255 - redC, 255 - greenC, 255 - blueC);
     square(0, 0, 5000);
     fill(redC, greenC, blueC);
     xCord = 0;
     
-    for (int i = 1; i < field.length - 1; i++)
+    for (int i = 0; i < field.length; i++)
     {
       yCord = 0;
-      for (int j = 1; j < field[i].length - 1; j++)
+      for (int j = 0; j < field[i].length; j++)
       {
         if (field[i][j])
         {
           square(xCord, yCord, pixelSize);
         }
+        
         yCord += pixelSize;
       }
       xCord += pixelSize;
     }
-      for (int i = 1; i < field.length - 1; i++)
-      {
-         for (int j = 1; j < field[i].length - 1; j++)
-         {
-           if (random(1) > 0.9999)
-           {
-             field[i][j] = !field[i][j];
-           }
-         }
-      }
     
     timer = frameTime;
   }

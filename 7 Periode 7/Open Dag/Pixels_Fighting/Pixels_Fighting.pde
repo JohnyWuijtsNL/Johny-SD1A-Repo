@@ -1,5 +1,5 @@
 //change to change size of the squares
-int pixelSize = 16;
+int pixelSize = 8;
 //change to change time it takes for one frame
 int frameTime = 2;
 //change to change the rate at which colour change happens
@@ -7,8 +7,8 @@ int changeSpeed = 1;
 //change to change the length of the trail the squares leave behind
 int trail = 32;
 
-int screenX = round(3840 / pixelSize);
-int screenY = round(2160 / pixelSize);
+int screenX = round(1920 / pixelSize);
+int screenY = round(1080 / pixelSize);
 boolean[][] field = new boolean[screenX][];
 boolean[][] oldField = new boolean[screenX][];
 int xCord = 0;
@@ -167,7 +167,10 @@ void draw()
       }
     }
     
-    clear();
+    generateColour();
+    fill(0, 0, 0);
+    square(0, 0, 5000);
+    fill(redC, greenC, blueC);
     xCord = 0;
     
     for (int i = 0; i < field.length; i++)
@@ -177,11 +180,11 @@ void draw()
       {
         if (field[i][j])
         {
-          fill(255, 0, 255);
+          fill(255 - redC, 255 - greenC, 255 - blueC);
         }
         else
         {
-          fill(0, 255, 0);
+          fill(redC, greenC, blueC);
         }
         square(xCord, yCord, pixelSize);
         yCord += pixelSize;
