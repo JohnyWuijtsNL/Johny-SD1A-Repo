@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>INPUTFIELDS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: turquoise;
+            margin-left: 20px;
+        }
+    </style>
+    <script src="inputfields.js"></script>
+</head>
+
+<body onload="initialize()">
+    <h3>Insert text here to display it:</h3>
+    <input type="text" id="input0"> <button onclick="buttonClick(0)">Submit</button>
+    <p id="p0">Displayed text goes here!</p>
+    <h3>Insert a number here to double it:</h3>
+    <input type="number" id="input1">
+    <p id="p1">Doubled number goes here!</p>
+    <h3>Insert an amount of Dollars here to convert it to Euros:</h3>
+    $<input type="number" id="input2">
+    <p id="p2">Amount of Euros goes here!</p>
+    <h3>Insert two numbers here to multiply them:</h3>
+    <input type="number" id="input3"> * <input type="number" id="input4">
+    <p id="p3">Multiplied number goes here!</p>
+    <h3>Insert a temperature in degrees Celsius here to convert it to degrees Fahrenheit:</h3>
+    <input type="number" id="input5">°C
+    <p id="p5">Temperature in Fahrenheit goes here!</p>
+    <h3>Insert a circle's radius here to get its area:</h3>
+    <input type="text" id="input6">
+    <p id="p6">The circle's area goes here!</p>
+    <h3>Insert two numbers here to get their average:</h3>
+    (<input type="text" id="input7"> + <input type="text" id="input8">) / 2
+    <p id="p7">Average of the two numbers goes here!</p>
+    <h3>Click the button to get the next number in the Fibonacci Sequence:</h3>
+    <button onclick="buttonClick(1)">Click me!</button>
+    <p id="fibonacci">1, 1</p>
+</body>
+
+</html>

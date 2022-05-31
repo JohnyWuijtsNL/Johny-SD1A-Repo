@@ -1,0 +1,63 @@
+#faq {
+  color: #ffffff;
+  margin: 25px 50px;
+}
+
+p#intro {
+  color: #ffffff;
+  font-size: 150%;
+  margin: 50px;
+}
+
+p {
+  margin: 25px 50px;
+}
+
+div.accordion div {
+  color: #000000;
+}
+
+div.accordion button {
+  margin: 0;
+}
+
+div.accordion {
+  margin: 25px 50px;
+}
+
+p.company {
+  color: #000000;
+  margin: 0px 5px 5px 20px;
+}
+
+div {
+  color: #ffffff;
+}
+
+button {
+  margin: 25px 50px;
+}
+
+#bg-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  size: 100%;
+  z-index: -1;
+}
+
+#terms p {
+  font-size: 75%;
+  margin: 5px;
+  margin-left: 50px;
+}
+
+input,
+label {
+  color: white;
+  margin: 5px;
+}
+
+input {
+  margin-left: 50px;
+}
