@@ -20,5 +20,22 @@ public class PositionSyncScript : MonoBehaviour
         locationDifference = vrCamera.transform.position - transform.position;
         vrRig.transform.position -= locationDifference;
         vrCursor.transform.rotation = vrController.transform.rotation;
+
+        //if (Input.anyKeyDown)
+        //{
+        //    OnGUI();
+        //}
+
+
     }
+    //void OnGUI()
+    //{
+    //    Debug.Log("Current detected event: " + Event.current);
+    //    Event e = Event.current;
+    //    if (e.isKey)
+    //    {
+    //        string key = e.keyCode.ToString();
+    //        Debug.Log(key);
+    //    }
+    //}
 }
