@@ -5,37 +5,16 @@ using UnityEngine;
 public class PositionSyncScript : MonoBehaviour
 {
     [SerializeField]
-    GameObject vrCamera, vrRig, vrController, vrCursor;
+    GameObject vrCamera, vrRig, vrController, vrFakeController;
     Vector3 locationDifference;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
+        //calculate location difference between vr camera (headset) and itself (attach script to empty object to be the camera position)
         locationDifference = vrCamera.transform.position - transform.position;
         vrRig.transform.position -= locationDifference;
-        vrCursor.transform.rotation = vrController.transform.rotation;
 
-        //if (Input.anyKeyDown)
-        //{
-        //    OnGUI();
-        //}
-
-
+        //set the rotation of the fake controller to be the same as the real controller
+        vrFakeController.transform.rotation = vrController.transform.rotation;
     }
-    //void OnGUI()
-    //{
-    //    Debug.Log("Current detected event: " + Event.current);
-    //    Event e = Event.current;
-    //    if (e.isKey)
-    //    {
-    //        string key = e.keyCode.ToString();
-    //        Debug.Log(key);
-    //    }
-    //}
 }
