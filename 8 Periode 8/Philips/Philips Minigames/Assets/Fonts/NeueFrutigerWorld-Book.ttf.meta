@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 0eea89e1c52f1774db1ff4e9a823de55
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Neue Frutiger World
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 7acdd5ec66e2e1e4f8240fbc31d5f6db, type: 3}
+  - {fileID: 12800000, guid: 662939ae337847f40bf7528078247bb8, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
